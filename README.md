@@ -7,11 +7,11 @@ Programming languages can have multiple implementations. Different implementatio
 - **CircuitPython**: [is][9] an open-source derivative of the MicroPython programming language targeted toward students and beginners. Development of CircuitPython is supported by Adafruit Industries. It is a software implementation of the Python 3 programming language, written in C. It has been ported to run on several modern microcontrollers.
 
 
-## Subset
+## Superset
 
-A subset of a programming language is a smaller, restricted version of the language that includes only a specific set of features, constructs, or functionalities. In Python, we have
+A superset of a programming language includes all the features of the original language and additional features. Essentially, it extends the capabilities of the original language by introducing new syntax, constructs, or functionalities. For example, if Language B is a superset of Language A, it means that any valid program written in Language A is also a valid program in Language B, but Language B introduces new features or enhancements beyond what Language A provides. In Python, we have.
 
-- **Cython**: [It][6] is a programming language which aims to simplify writing C and C++ extension modules for the CPython Python runtime. [It][2] is a subset of the programming language Python, which allows developers to write Python code (with optional, C-inspired syntax extensions) that yields performance comparable to that of C. [The][5] resulting code is also usable with Python via direct C-level API calls into the Python interpreter.
+- **Cython**: [It][6] is a programming language which aims to simplify writing C and C++ extension modules for the CPython Python runtime. [It][15] is a superset of the Python programming language that additionally supports calling C functions and declaring C types on variables and class attributes. It allows developers to write Python code (with optional, C-inspired syntax extensions) that yields performance comparable to that of C. It is often used to speed up performance-critical parts of a Python program by taking advantage of lower-level optimizations offered by C. The file extension typically used for Cython source files is `.pyx`. When you write code using Cython, you'll often save your source code in files with this extension. [The][5] resulting code is also usable with Python via direct C-level API calls into the Python interpreter.
 
 ## JIT Compilers
 
@@ -58,3 +58,4 @@ A transpiler, short for source-to-source compiler, is a type of compiler that tr
 [11]: https://nuitka.net/doc/user-manual.html
 [12]: https://en.wikipedia.org/wiki/Nuitka
 [13]: https://www.myhdl.org/
+[14]: https://cython.org/
