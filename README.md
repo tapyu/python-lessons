@@ -1,6 +1,6 @@
 ## Implementations
 
-Programming languages can have multiple implementations. Different implementations can be written in different languages and can use different methods to compile or interpret [code][1]. In Python, when people talk about Python implementations, they usually refer to different runtime environments or interpreters that execute Python code. These implementations may have different features, performance characteristics, and use cases.
+Programming languages can have multiple implementations. Different implementations can use different methods to compile or interpret [code][1]. In Python, when people talk about Python implementations, they usually refer to different runtime environments or interpreters that execute Python code. These implementations may have different features, performance characteristics, and use cases.
 
 - **CPython**: [CPython][2] is the *reference implementation* of the Python programming language ([reference][4] implementation is a program that implements all requirements from a corresponding specification. The reference implementation often accompanies a technical standard, and demonstrates what should be considered the "correct" behavior of any other implementation of it). Written in C and Python, CPython is the default and most widely used implementation of the Python language. On you computer, if `python` is linked to `python3.x`, where `x` is a version number (e.g., `python3.10`), it's CPython. [It][3] compiles Python programs into an intermediate bytecode which is then executed by its virtual machine. It has a foreign function interface with several languages, including C, in which one must explicitly write bindings in a language other than Python.
 - **MicroPython**: MicroPython is a software implementation of a programming language largely compatible with Python 3, written in C, that is optimized to run on a microcontroller. MicroPython does have an inline assembler, and that code will run at full speed, but it's non-portable across different microcontrollers (as any assembly is).
@@ -42,6 +42,11 @@ A transpiler, short for source-to-source compiler, is a type of compiler that tr
 - [Nuitka][11]: [Nuitka][12] is a source-to-source compiler which compiles Python code to C source code, applying some compile-time optimizations in the process such as constant folding and propagation, built-in call prediction, type inference, and conditional statement execution.
 - [MyHDL][13]: is a Python-based hardware description language (HDL), that converts MyHDL code to Verilog or VHDL code.
 
+## Standalone executables
+
+While CPython translates Python source code into bytecode, the resulting bytecode is not a standalone executable. To run the bytecode, you still need the Python interpreter. If you want to distribute your Python program as a standalone executable that doesn't require a separate Python installation, you would typically use a tool like [PyInstaller][16], py2exe, cx_Freeze, or similar, which packages both your script and the Python interpreter into a single executable file. If you have specific reasons for avoiding external tools and prefer a minimalistic approach, you might transpilers like `Nuitka`
+
+Both Nuitka and PyInstaller can create standalone executables from Python code but they have different approaches. PyInstaller packages your Python code along with the Python interpreter into a single executable, making it easy to distribute. On the other hand, Nuitka is a Python implementation that translates Python code into C code. The generated C code is then compiled using a C compiler (like GCC) to produce native machine code. It aims for performance and a reduced runtime footprint. *Choose Nuitka if you prioritize performance and want a compiled result, potentially achieving faster execution speeds. However, PyInstaller is often simpler to use and more suitable for projects where ease of distribution and cross-platform compatibility is a higher priority than raw performance.*
 
 ---
 
@@ -59,3 +64,5 @@ A transpiler, short for source-to-source compiler, is a type of compiler that tr
 [12]: https://en.wikipedia.org/wiki/Nuitka
 [13]: https://www.myhdl.org/
 [14]: https://cython.org/
+[15]: https://en.wikipedia.org/wiki/Cython
+[16]: https://pyinstaller.org/en/stable/
