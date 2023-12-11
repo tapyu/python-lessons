@@ -64,6 +64,14 @@ if __name__ == "__main__":
 ```
 `__name__` is a special variable (usually called "dunder variable") in Python that is automatically set by the interpreter. When a Python script is executed, the `__name__` variable is set to `"__main__"` if the script is the main program being run.  This block checks if the package is being executed as the main program (and not imported as a module). When you run `python -m my_project`, the `__name__` attribute is set to `"__main__"` as the main file run is `my_project\__main__.py`.
 
+While it's true that variables and imports within `__init__.py` are not automatically available outside its scope, the main purpose of this file is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. For instance, You can use `__init__.py` to import modules or symbols that should be available when the package is imported. This can help users easily access commonly used components of the package.
+```py
+# NOTE: in __init__.py
+from .module1 import some_function
+from .module2 import another_function
+```
+Now, when someone imports the package (`import my_project`), they can directly access `some_function` and `another_function`.
+
 NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__new__()` are called dunder files, variables, and methods, respectively.
 
 ## `__all__` variable
