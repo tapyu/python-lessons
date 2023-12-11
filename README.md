@@ -66,4 +66,6 @@ if __name__ == "__main__":
 
 NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__new__()` are called dunder files, variables, and methods, respectively.
 
-## Importing a package; `__all__` variable
+## `__all__` variable
+
+The `__all__` variable in a Python file is used to define what symbols (functions, classes, or variables) should be considered as part of the package's public API when someone imports the package using the `from package import *` syntax.

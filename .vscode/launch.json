@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: debug my_project",
+            "name": "Python: debug python-lessons",
             "type": "python",
             "request": "launch",
             //"program": "${workspaceFolder}",
             //"args": ["arg1", "arg2"],
-            "module": "my_project",
+            "module": "python-lessons",
             "cwd": "${workspaceFolder}/..",
             "console": "integratedTerminal",
             "justMyCode": true
