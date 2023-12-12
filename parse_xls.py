@@ -1,28 +1,33 @@
-import xlrd
+import xlrd, xlwt
+from .config import *
+import os
 
-def read_excel(file_path):
+def fix_excel(file_path):
+    new_workbook = xlwt.Workbook()
     try:
         # Open the Excel workbook
         workbook = xlrd.open_workbook(file_path)
 
-        # Select the first sheet (index 0)
-        sheet = workbook.sheet_by_index(0)
+        # Select the first worksheet (index 0)
+        worksheet = workbook.sheet_by_index(0)
 
-        # Get the number of rows and columns in the sheet
-        num_rows = sheet.nrows
-        num_cols = sheet.ncols
+        # create a new worksheet
+        new_worksheet = new_workbook.add_sheet(worksheet.name)
 
         # Read data from each cell in the sheet
-        for row_index in range(num_rows):
-            row_data = []
-            for col_index in range(num_cols):
-                cell_value = sheet.cell_value(row_index, col_index)
-                row_data.append(cell_value)
-            print(row_data)
-
+        new_row = 0
+        for row in range(worksheet.nrows):
+            if {cell.ctype for cell in worksheet.row(row)} == {0}:
+                continue
+            for col, cell in enumerate(worksheet.row(row)):
+                new_worksheet.write(new_row, col, cell.value)
+            new_row += 1
     except FileNotFoundError:
-        print(f"File not found: {file_path}")
+        logging.error("File not found: %s", file_path)
     except xlrd.XLRDError as e:
-        print(f"Error reading Excel file: {e}")
+        logging.error("Error reading Excel file: %s", e)
     except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+        logging.error("An unexpected error occurred: %s", e)
+    
+    base_name, extension = os.path.splitext(file_path)
+    new_workbook.save(f"{base_name}_corrigido{extension}")
