@@ -88,4 +88,15 @@ NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__ne
 
 ## `__all__` variable
 
-The `__all__` variable in a Python file is used to define what symbols (functions, classes, or variables) should be considered as part of the package's public API when someone imports the package using the `from package import *` syntax.
+- The `__all__` variable in a Python file is used to define what symbols (functions, classes, or variables) should be considered as part of:
+- The package's "public API": When you declare the `__all__` variable in the `__init__.py` file of a Python package, something like
+```py
+__all__ = [
+    "a_variable_name",
+    "another_variable_name",
+    "a_method_name",
+    "a_class_name"
+]
+```
+and someone imports this package using the `from package_name import *` syntax, only those variables, classes, and methods defined in `__all__` will be imported.
+- In a module (that is, a `.py` file): It works in the very same way, that is, when someone uses the syntax `from my_package.my_module import *` those variables, classes, and methods defined in `__all__` will be imported.
