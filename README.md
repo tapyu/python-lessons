@@ -27,7 +27,15 @@ def my_function(i):
 variable_in_module = 42
 my_function(variable_in_module)
 ```
-With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type `/path/to/my_module.py` to run this Python script. If you don't put the shebang, you can also type `python3 /path/to/my_module.py` to run it.
+With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type `/path/to/my_module.py` to run this Python script. If you don't put the shebang, you can also type
+```py
+python3 ./my_module.py
+```
+or
+```py
+python -m my_module
+```
+to run it.
 
 - A package is a way of organizing related modules into a directory hierarchy. It contains a special `__init__.py` file (which can be empty) to indicate that the directory should be treated as a package. Packages can contain sub-packages and modules, forming a nested structure.
 
