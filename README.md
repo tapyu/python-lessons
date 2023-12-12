@@ -17,13 +17,17 @@ my_project/
 
 - A module is a single Python file containing Python code. It serves as a way to organize Python code, allowing you to encapsulate related functionality into a single file. Modules can define functions, classes, and variables, which can be used by other modules or scripts.
 
-Example of a simple module (`my_module.py`):
+Example of a simple module (see `my_module.py`):
 ```py
-def my_function():
-    print("Hello from my_function in my_module")
+#!/usr/bin/env python
+
+def my_function(i):
+    print(f"Hello from my_function in my_module: {i}")
 
 variable_in_module = 42
+my_function(variable_in_module)
 ```
+With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type `/path/to/my_module.py` to run this Python script. If you don't put the shebang, you can also type `python3 /path/to/my_module.py` to run it.
 
 - A package is a way of organizing related modules into a directory hierarchy. It contains a special `__init__.py` file (which can be empty) to indicate that the directory should be treated as a package. Packages can contain sub-packages and modules, forming a nested structure.
 
