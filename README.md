@@ -88,7 +88,7 @@ NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__ne
 
 ## `__all__` variable
 
-- The `__all__` variable in a Python file is used to define what symbols (functions, classes, or variables) should be considered as part of:
+The `__all__` variable in a Python file is used to define what symbols (functions, classes, or variables) should be considered as part of:
 - The package's "public API": When you declare the `__all__` variable in the `__init__.py` file of a Python package, something like
 ```py
 __all__ = [
