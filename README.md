@@ -11,7 +11,8 @@ my_project/
 └── README.md
 ```
 
-- In a Python project, the main entry point (`__main__.py`) is typically a script or a module that is executed when the program is run.
+- The `__init__.py` file in a Python package serves as the initialization code for the package, and it is executed when the package is imported, that is, `import my_project`. The main purpose of this file is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. It servers as a the "package's API".
+- `__main__.py` allows you to define a main entry point for your Python package when it is run as a module. You can run `python -m my_project` only if you have `my_project/__main__.py`. It provides a way to structure your package for script execution, defining behaviors specific to running the package from the command line. The `__init__.py` file is executed first, and then the `__main__.py` file is executed, but the scope of variables in the `__init__.py` file is separate from the scope of variables in the `__main__.py` file.
 
 ## Package vs. Module
 
