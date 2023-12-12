@@ -28,11 +28,11 @@ variable_in_module = 42
 my_function(variable_in_module)
 ```
 With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type `/path/to/my_module.py` to run this Python script. If you don't put the shebang, you can also type
-```py
+```sh
 python3 ./my_module.py
 ```
 or
-```py
+```sh
 python -m my_module
 ```
 to run it.
