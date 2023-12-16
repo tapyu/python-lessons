@@ -11,3 +11,5 @@ https://dev.to/bowmanjd/how-do-i-install-a-python-command-line-tool-or-script-hi
 https://www.reddit.com/r/learnpython/comments/jq5miv/pip_vs_pipx/
 
 https://github.com/pypa/pipx
+
+https://stackoverflow.com/questions/59286983/how-to-run-a-script-using-pyproject-toml-settings-and-poetry
