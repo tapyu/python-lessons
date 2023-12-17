@@ -24,9 +24,9 @@
 The utimate conclusion is:
 - We have a trillion tools that is intended to solve these three issues.
 - All of them but Poetry is a pain in the ass. So stick with Poetry.
-- Worthmentions to
-  - `setuptools`, which had became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
-  - `PyPI` (Python Package Index), as it has become the official third-party software repository for Python. However, it has nothing to do with the package dependency, packaging, and creating virtual environments.
+- Honorable mention to
+  - `setuptools`, which had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
+  - `PyPI` (Python Package Index), as it has become the official third-party software repository for Python. However, it has nothing to do with the package dependency, packaging, and creating virtual environments;
 
 ### setuptools
 
