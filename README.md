@@ -34,7 +34,7 @@
 
 ## History
 
-> WARNING: Virtual environments, Python dependency management, Packaging, and Package manager aren't separated task, usually, and many tools are intended to tackle simutaneously some of these tasks.
+> WARNING: Virtual environments, Python dependency management, Packaging, and Package manager aren't separated tasks, and many tools tackle some of these tasks simutaneously.
 
 ![](./assets/history.png)
 
