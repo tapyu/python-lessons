@@ -13,20 +13,31 @@
 
 # Dependency managment, Packaging (AKA publishing), and virtual environments
 
-- [Python](https://youtu.be/QX_Nhu1zhlg?t=401) dependency managment is the process of installing, operating, configuring, and removing Python distributions used by your project in a consistent manner.
+## Definitions
+
+- **[Python](https://youtu.be/QX_Nhu1zhlg?t=401) dependency managment**: the process of installing, operating, configuring, and removing Python distributions used by your project in a consistent manner.
 
 > NOTE: [An](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s) example of how not having package manager can mess things up.
 
-- [Packaging](https://youtu.be/QX_Nhu1zhlg?t=433) is the process of creating and uploading a Python distribution to be used by yourself and others.
+- **[Packaging](https://youtu.be/QX_Nhu1zhlg?t=433)** is the process of creating and uploading a Python distribution to be used by yourself and others.
+
+## History
 
 ![](./assets/history.png)
+
+## Conclusions
 
 The utimate conclusion is:
 - We have a trillion tools that is intended to solve these three issues.
 - All of them but Poetry is a pain in the ass. So stick with Poetry.
-- Honorable mention to
+- Honorable mentions to
   - `setuptools`, which had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
   - `PyPI` (Python Package Index), as it has become the official third-party software repository for Python. However, it has nothing to do with the package dependency, packaging, and creating virtual environments;
+  - `pip` as it has bemoce the default package manager to install packages from PyPI or elsewhere.
+ 
+## Advantage of Poetry over the other tools
+
+- It wonderfully does the script install which was usually done by `setuptools` and `setup.py`.
 
 ### setuptools
 
