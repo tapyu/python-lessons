@@ -47,6 +47,7 @@ The utimate conclusion is:
   - `setuptools`: had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
   - `PyPI` (Python Package Index): has become the official third-party software repository for Python. However, it has nothing to do with the package dependency, packaging, and creating virtual environments;
   - `pip`: has become the default package manager to install packages from PyPI or elsewhere.
+  - `conda`: a good package manager tailored to scientific applications.
  
 ## Advantage of Poetry over the other tools
 
