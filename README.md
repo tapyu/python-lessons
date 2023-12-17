@@ -1,7 +1,7 @@
 # A typical Python structure
 
 ```
-my_project/
+pyproject/
 ├── __init__.py
 ├── __main__.py
 ├── my_package/
@@ -11,8 +11,8 @@ my_project/
 └── README.md
 ```
 
-- The `__init__.py` file in a Python package serves as the initialization code for the package, and it is executed when the package is imported, that is, `import my_project`. The main purpose of this file is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. It servers as a the "package's API".
-- `__main__.py` allows you to define a main entry point for your Python package when it is run as a module. You can run `python -m my_project` only if you have `my_project/__main__.py`. It provides a way to structure your package for script execution, defining behaviors specific to running the package from the command line. The `__init__.py` file is executed first, and then the `__main__.py` file is executed, but the scope of variables in the `__init__.py` file is separate from the scope of variables in the `__main__.py` file.
+- The `__init__.py` file in a Python package serves as the initialization code for the package, and it is executed when the package is imported, that is, `import pyproject`. The main purpose of this file is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. It servers as a the "package's API".
+- `__main__.py` allows you to define a main entry point for your Python package when it is run as a module. You can run `python -m pyproject` only if you have `pyproject/__main__.py`. It provides a way to structure your package for script execution, defining behaviors specific to running the package from the command line. The `__init__.py` file is executed first, and then the `__main__.py` file is executed, but the scope of variables in the `__init__.py` file is separate from the scope of variables in the `__main__.py` file.
 
 ## Package vs. Module
 
@@ -51,20 +51,20 @@ my_package/
 
 ## Running your Python project
 
-1. If you are in the parent directory of `my_project/`, you can run the Python script `__main__.py` from the terminal using the following command:
+1. If you are in the parent directory of `pyproject/`, you can run the Python script `__main__.py` from the terminal using the following command:
 ```sh
-python my_project/__main__.py
+python pyproject/__main__.py
 ```
-1. Alternatively, you can navigate into the `my_project/` directory and then run the script:
+1. Alternatively, you can navigate into the `pyproject/` directory and then run the script:
 ```sh
-cd my_project
+cd pyproject
 python __main__.py
 ```
-1. If you want to run the project from the directory right above `my_project/`, you can use the `-m` switch to run the the `__main__.py` module:
+1. If you want to run the project from the directory right above `pyproject/`, you can use the `-m` switch to run the the `__main__.py` module:
 ```sh
-python -m my_project.__main__
+python -m pyproject.__main__
 ```
-1. You can also run the `my_project` package as a module (that is, as a Python script file) by running
+1. You can also run the `pyproject` package as a module (that is, as a Python script file) by running
 ```sh
 python -m my_package
 ```
@@ -75,7 +75,7 @@ After the initialization, the `__main__.py` file is executed if the package is r
 if __name__ == "__main__":
     main()
 ```
-`__name__` is a special variable (usually called "dunder variable") in Python that is automatically set by the interpreter. When a Python script is executed, the `__name__` variable is set to `"__main__"` if the script is the main program being run.  This block checks if the package is being executed as the main program (and not imported as a module). When you run `python -m my_project`, the `__name__` attribute is set to `"__main__"` as the main file run is `my_project\__main__.py`.
+`__name__` is a special variable (usually called "dunder variable") in Python that is automatically set by the interpreter. When a Python script is executed, the `__name__` variable is set to `"__main__"` if the script is the main program being run.  This block checks if the package is being executed as the main program (and not imported as a module). When you run `python -m pyproject`, the `__name__` attribute is set to `"__main__"` as the main file run is `pyproject\__main__.py`.
 
 While it's true that variables and imports within `__init__.py` are not automatically available outside its scope, the main purpose of this file is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. For instance, You can use `__init__.py` to import modules or symbols that should be available when the package is imported. This can help users easily access commonly used components of the package.
 ```py
@@ -83,7 +83,7 @@ While it's true that variables and imports within `__init__.py` are not automati
 from .module1 import some_function
 from .module2 import another_function
 ```
-Now, when someone imports the package (`import my_project`), they can directly access `some_function` and `another_function`.
+Now, when someone imports the package (`import pyproject`), they can directly access `some_function` and `another_function`.
 
 NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__new__()` are called dunder files, variables, and methods, respectively.
 
