@@ -44,9 +44,9 @@ The utimate conclusion is:
 - When it comes to project dependency management, packaging, and virtual environments, Poetry is the way-to-go.
   > Warning: Poetry is not intended to be a package manager! You should use `pip` or `pipx` instead.
 - Honorable mentions to
-  - `setuptools`, which had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
-  - `PyPI` (Python Package Index), as it has become the official third-party software repository for Python. However, it has nothing to do with the package dependency, packaging, and creating virtual environments;
-  - `pip` as it has become the default package manager to install packages from PyPI or elsewhere.
+  - `setuptools`: had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
+  - `PyPI` (Python Package Index): has become the official third-party software repository for Python. However, it has nothing to do with the package dependency, packaging, and creating virtual environments;
+  - `pip`: has become the default package manager to install packages from PyPI or elsewhere.
  
 ## Advantage of Poetry over the other tools
 
