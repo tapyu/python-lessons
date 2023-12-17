@@ -1,6 +1,6 @@
 # Python packages
 
-- A Python package is a directory structure containing Python codes which perform a specific set of functionalities.
+- [A Python package][1] is a directory structure containing Python codes which perform a specific set of functionalities.
 - Packages can contain sub-packages and modules (`.py` files), forming a nested structure.
 - In addition to sub-packages and modules, a Python package also contains files related to [package managenment and versioning](https://github.com/tapyu/python-lessons/tree/package-managers).
 
@@ -93,7 +93,7 @@ Note that you cannot run `my_package` if you put this Python package within one 
 
 # Python modules
 
-- In contrast to creating Python packages, you can create a single Python file, that is, a Python module.
+- In contrast to creating Python packages, you can create [a single Python file, that is, a Python module][1].
 
 Example of a simple module (see `my_module.py`):
 ```py
@@ -146,3 +146,6 @@ __all__ = [
 ```
 and someone imports this package using the `from package_name import *` syntax, only those variables, classes, and methods defined in `__all__` will be imported.
 - A module (that is, a `.py` file): It works in the very same way, that is, when someone uses the syntax `from my_package.my_module import *`, only those variables, classes, and methods defined in `__all__` will be imported.
+
+
+[1]: https://youtu.be/QX_Nhu1zhlg?t=352&si=OOcG9cDoCnnzCYBE
