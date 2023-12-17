@@ -41,7 +41,8 @@ A software that
 
 > WARNING: virtual environments, python dependency management, packaging, and package manager aren't separated tasks, and many tools try to tackle some of them simutaneously.
 
-![](./assets/history.png)
+| Tool | Year | Virtual environments | Project dependency | Packaging | Package management |
+| ---  | ---  | ---                   | ---                | ---       | ---                |
 
 ## Conclusions
 
