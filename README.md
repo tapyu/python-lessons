@@ -11,11 +11,13 @@
 - **Built Distribution (bdist)**: It creates distribution which includes .pyc files(python bytecode), .so/.dll/.dylib for binary modules, .exe if using [pyinstaller](https://pyinstaller.org/en/stable/) on Windows, data files… but no `setup.py`. The result is an archive that is specific to a platform (for example linux-x86_64) and to a version of Python. That can be installed and then used directly by extracting it into the root of your filesystem (executables are in `/usr/bin` (or equivalent), data files in `/usr/share`, modules in `/usr/lib/pythonX.X/site-packages/…`).
 
 
-# Python dependency managment
+# Python dependency managment and Packaging (AKA publishing)
 
-Python dependency managment [is the process of installing, operating, configuring, and removing Python distributions](https://youtu.be/QX_Nhu1zhlg?t=401)
+- Python dependency managment [is the process of installing, operating, configuring, and removing Python distributions used by your project in a consistent manner.](https://youtu.be/QX_Nhu1zhlg?t=401).
 
 > NOTE: [An example of how not having package management can mess things up](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s)
+
+- Packaging is [the process of creating and uploading a Python distribution to be used by yourself and others](https://youtu.be/QX_Nhu1zhlg?t=433)
 
 
 TODO:
