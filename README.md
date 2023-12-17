@@ -13,11 +13,11 @@
 
 # Taks
 
-## Virtual environments
+### Virtual environments
 
 A software that creates isolated environments in which a Python package and its dependences are installed and run.
 
-## Project dependency management
+### Project dependency management
 
 A software that
 - Adds or Removes packages dependency on a dependency file (such as `pyproject.toml`) of the project.
@@ -25,11 +25,11 @@ A software that
 - Installs those package dependencies in their specific versions. It is usually done within a isolated environment. When the sofware is run on another system, the version of the dependencies is "locked" to those versions listed in `poetry.lock` to ensure reproducibility.
 > NOTE: [An](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s) example of how not having package manager can mess things up.
 
-## [Packaging (AKA publishing)](https://youtu.be/QX_Nhu1zhlg?t=433)
+### [Packaging (AKA publishing)](https://youtu.be/QX_Nhu1zhlg?t=433)
 
 The process of building a Python distribution and uploading it on a online software repository (such as PyPI).
 
-## Package management
+### Package management
 
 A software that
 - Downloads and installs Python packages which were published in a package index registry, such as PyPI, and make them system- or user-wide callable.
