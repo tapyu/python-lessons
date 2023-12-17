@@ -1,13 +1,15 @@
 # A typical Python structure
 
 ```
-pyproject/
-├── __init__.py
-├── __main__.py
-├── my_package/
-│   ├── __init__.py
-│   ├── module1.py
-│   └── module2.py
+.
+├── pypackage
+│   ├── config.py
+│   ├── gui.py
+│   ├── __init__.py
+│   ├── __main__.py
+│   └── parse_xls.py
+├── poetry.lock
+├── pyproject.toml
 └── README.md
 ```
 
