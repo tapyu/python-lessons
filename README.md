@@ -18,6 +18,4 @@ https://ericmjl.github.io/blog/2016/12/24/how-to-make-your-python-scripts-callab
 
 https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages
 
-https://realpython.com/add-python-to-path/
-
 https://datatofish.com/add-python-to-windows-path/
