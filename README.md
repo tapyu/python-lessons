@@ -87,7 +87,7 @@ Now, from any directory on your terminal, you can run
 ```sh
 python -m my_package
 ```
-and `python` will find `my_package` and run it.
+and `python` will find `my_package` and run it. Note that it didn't work if you put this Python package within one of the directories listed in `$PATH` as Python packages are directories, and directories cannot be executed. [To make a Python package executable, you need to install it](https://github.com/tapyu/python-lessons/blob/package-managers/README.md).
 
 # Python modules
 
@@ -108,7 +108,11 @@ my_function(variable_in_module)
 
 ### Local run
 
-With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type `/path/to/my_module.py` to run this Python script. If you don't put the shebang, you can also type
+With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type
+```sh
+/path/to/my_module.py
+```
+to run this Python script. If you don't put the shebang, you can also type
 ```sh
 python ./my_module.py
 ```
@@ -117,6 +121,14 @@ or
 python -m my_module
 ```
 to run it.
+
+### Global run (in the `PATH` environment variable)
+
+Alternatively, you can save `my_module.py` within one of the paths listed in the `$PATH` environment variable. In this case, if you put the shebang in `my_module.py` and make it executable, you can simply type:
+```py
+`my_module.py`
+```
+to run this Python script (if you don't want to write the file extension, just save this file as `my_module`. It works in the very same way).
 
 # `__all__` variable
 
