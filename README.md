@@ -11,18 +11,30 @@
 - **Built Distribution (bdist)**: It creates distribution which includes .pyc files(python bytecode), .so/.dll/.dylib for binary modules, .exe if using [pyinstaller](https://pyinstaller.org/en/stable/) on Windows, data files… but no `setup.py`. The result is an archive that is specific to a platform (for example linux-x86_64) and to a version of Python. That can be installed and then used directly by extracting it into the root of your filesystem (executables are in `/usr/bin` (or equivalent), data files in `/usr/share`, modules in `/usr/lib/pythonX.X/site-packages/…`).
 
 
-# Dependency managment, Packaging (AKA publishing), and virtual environments
+# Dependency management, Packaging (AKA publishing), virtual environments, package management
 
 ## Definitions
 
-- **[Python](https://youtu.be/QX_Nhu1zhlg?t=401) dependency managment**: the process of installing, operating, configuring, and removing Python distributions used by your project in a consistent manner.
+- **Virtual environments**: A software that creates isolated environments in which a Python package and its dependences are installed and run.
+
+- **Python dependency management**: A software that
+  - Adds or Removes packages dependency on a dependency file (such as `pyproject.toml`) of the project.
+  - Writes on a file (such as `poetry.lock`) the version of all packages required to run the python project.
+  - Installs those package dependencies in their specific versions. It is usually done within a isolated environment. When the sofware is run on another system, the version of the dependencies is "locked" to those versions listed in `poetry.lock` to ensure reproducibility.
 
 > NOTE: [An](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s) example of how not having package manager can mess things up.
 
-- **[Packaging](https://youtu.be/QX_Nhu1zhlg?t=433)**: the process of creating and uploading a Python distribution to be used by yourself and others.
-- **Virtual environments**:
+- **[Packaging](https://youtu.be/QX_Nhu1zhlg?t=433)**: the process of building a Python distribution and uploading it on a online software repository (such as PyPI).
+
+- **Package manager**: A software that
+  - Downloads and installs Python packages which were published in a package index registry, such as PyPI, and make them system- or user-wide callable.
+  - Installs all the package dependencies that the wanted package needs. Some package managers provide mechanisms for creating isolated or virtual environments to install them.
+  - Installs a specific version of a package, if it is required.
+  - Uninstalls a previously installed package.
 
 ## History
+
+> WARNING: Virtual environments, Python dependency management, Packaging, and Package manager aren't separated task, usually, and many tools are intended to tackle simutaneously some of these tasks.
 
 ![](./assets/history.png)
 
@@ -34,7 +46,8 @@ The utimate conclusion is:
 - Honorable mentions to
   - `setuptools`, which had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
   - `PyPI` (Python Package Index), as it has become the official third-party software repository for Python. However, it has nothing to do with the package dependency, packaging, and creating virtual environments;
-  - `pip` as it has bemoce the default package manager to install packages from PyPI or elsewhere.
+  - `pip` as it has become the default package manager to install packages from PyPI or elsewhere.
+  > Warning: Poetry is not intended to be a package manager!
  
 ## Advantage of Poetry over the other tools
 
