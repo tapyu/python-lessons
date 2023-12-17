@@ -15,3 +15,9 @@ https://github.com/pypa/pipx
 https://stackoverflow.com/questions/59286983/how-to-run-a-script-using-pyproject-toml-settings-and-poetry
 
 https://ericmjl.github.io/blog/2016/12/24/how-to-make-your-python-scripts-callable-from-the-command-line/
+
+https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages
+
+https://realpython.com/add-python-to-path/
+
+https://datatofish.com/add-python-to-windows-path/
