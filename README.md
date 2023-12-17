@@ -13,11 +13,11 @@
 
 # Dependency managment and Packaging (AKA publishing)
 
-- Python dependency managment [is the process of installing, operating, configuring, and removing Python distributions used by your project in a consistent manner.](https://youtu.be/QX_Nhu1zhlg?t=401).
+- [Python](https://youtu.be/QX_Nhu1zhlg?t=401) dependency managment is the process of installing, operating, configuring, and removing Python distributions used by your project in a consistent manner.
 
-> NOTE: [An example of how not having package manager can mess things up](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s).
+> NOTE: [An](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s) example of how not having package manager can mess things up.
 
-- Packaging is [the process of creating and uploading a Python distribution to be used by yourself and others](https://youtu.be/QX_Nhu1zhlg?t=433)
+- [Packaging](https://youtu.be/QX_Nhu1zhlg?t=433) is the process of creating and uploading a Python distribution to be used by yourself and others.
 
 ![](./assets/history.png)
 
