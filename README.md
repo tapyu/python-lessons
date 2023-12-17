@@ -38,7 +38,7 @@ The utimate conclusion is:
  
 ## Advantage of Poetry over the other tools
 
-- It wonderfully does the script install which was usually done by `setuptools` and `setup.py`.
+- It wonderfully does the script install in the `[tool.poetry.scripts]` section. It was usually done by `setuptools` and `setup.py`.
 
 ### setuptools
 
