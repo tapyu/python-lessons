@@ -71,6 +71,18 @@
 
 ### Global run (`PYTHONPATH` environment variable)
 
+In order to run `my_package` globally (that is, from anywhere), you must set the `PYTHONPATH` environment variable.
+
+- On GNU/Linux, just run
+    ```sh
+    export PYTHONPATH="/path/to/parent/directory:/path/to/another/parent/directory"
+    ```
+    where `/path/to/parent/directory` is the parent directory path where `my_package/` is located in.
+
+- On Windows, you need to set a [user environment variables](https://stackoverflow.com/a/4855685/13998346):
+
+  ![](https://i.stack.imgur.com/ZGp36.png)
+
 # Python modules
 
 - In contrast to creating Python packages, you can create a single Python file, that is, a Python module.
