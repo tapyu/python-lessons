@@ -43,7 +43,7 @@ A software that
 
 | Tool | Year | Virtual environments | Project dependency | Packaging | Package management |
 | ---  | :---:  | :---:                   | :---:                | :---:       | :---:                |
-| `setuptools` | 2004 | :x: | ✔️ | :x: | ✔️ |
+| `setuptools` | 2004 | :x: | ✔ | :x: | ✔️ |
 
 ## Conclusions
 
