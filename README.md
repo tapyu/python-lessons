@@ -83,6 +83,12 @@ In order to run `my_package` globally (that is, from anywhere), you must set the
 
   ![](https://i.stack.imgur.com/ZGp36.png)
 
+Now, from any directory on your terminal, you can run
+```sh
+python -m my_package
+```
+and `python` will find `my_package` and run it.
+
 # Python modules
 
 - In contrast to creating Python packages, you can create a single Python file, that is, a Python module.
