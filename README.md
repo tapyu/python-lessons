@@ -1,4 +1,11 @@
-# Python Package managment
+# Python Distributions
+
+[A][1] package distribution can be defined as the collection of files that together allows to build, package and distribute a module. Once a distribution exists in a system, it can easily be installed. Also, it can be shared with PyPI(Python package index) community so that other people can use your distribution. [They][2] are usually bundled into a tarball, wheel, or zip format.
+
+
+# Python dependency managment
+
+Python dependency managment [is the process of installing, operating, configuring, and removing Python distributions](https://youtu.be/QX_Nhu1zhlg?t=401)
 
 > NOTE: [An example of how not having package management can mess things up](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s)
 
@@ -22,3 +29,7 @@ https://stackoverflow.com/questions/59286983/how-to-run-a-script-using-pyproject
 https://ericmjl.github.io/blog/2016/12/24/how-to-make-your-python-scripts-callable-from-the-command-line/
 
 https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages
+
+
+[1]: https://www.geeksforgeeks.org/source-distribution-and-built-distribution-in-python/
+[2]: https://youtu.be/QX_Nhu1zhlg?t=352&si=OOcG9cDoCnnzCYBE
