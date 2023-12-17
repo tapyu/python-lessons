@@ -13,3 +13,5 @@ https://www.reddit.com/r/learnpython/comments/jq5miv/pip_vs_pipx/
 https://github.com/pypa/pipx
 
 https://stackoverflow.com/questions/59286983/how-to-run-a-script-using-pyproject-toml-settings-and-poetry
+
+https://ericmjl.github.io/blog/2016/12/24/how-to-make-your-python-scripts-callable-from-the-command-line/
