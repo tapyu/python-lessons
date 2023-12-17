@@ -19,7 +19,8 @@
 
 > NOTE: [An](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s) example of how not having package manager can mess things up.
 
-- **[Packaging](https://youtu.be/QX_Nhu1zhlg?t=433)** is the process of creating and uploading a Python distribution to be used by yourself and others.
+- **[Packaging](https://youtu.be/QX_Nhu1zhlg?t=433)**: the process of creating and uploading a Python distribution to be used by yourself and others.
+- **Virtual environments**:
 
 ## History
 
