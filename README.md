@@ -2,7 +2,7 @@
 
 - A Python package is a directory structure containing Python codes which perform a specific set of functionalities.
 - Packages can contain sub-packages and modules (`.py` files), forming a nested structure.
-- In addition to sub-packages and modules, a Python package also contains files related to package managenment and versioning.
+- In addition to sub-packages and modules, a Python package also contains files related to [package managenment and versioning](https://github.com/tapyu/python-lessons/tree/package-managers).
 
 ## A typical Python package structure
 
@@ -23,6 +23,7 @@
 
 - Each Python package (directory) contains a special `__init__.py` file (which can be empty) to indicate that this directory should be treated as a package.
 - The `__init__.py` file in a Python package serves as the initialization code for the package, and it is executed when the package is imported, that is, `import pyproject`. The main purpose of this file is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. It servers as a the "package's API".
+- As of Python 3.3 and later, it is not strictly necessary to include an `__init__.py` file in the root directory of your project to consider it a package. In modern Python, implicit namespace packages are supported, which means you can have a directory structure without the need for an `__init__.py` file at every level. However, if you're working with older versions of Python (before 3.3) or if you want to ensure compatibility with tools and practices that expect the presence of `__init__.py` files, you might still include it.
 
 ## The `__main__.py` file
 
@@ -31,41 +32,9 @@
     2. You are in the parent directory of `pyproject` or if the path to `pyproject` is searchable by `python`.
 -  It provides a way to structure your package for script execution, defining behaviors specific to running the package from the command line.
 
-# Python modules
+## Running your Python package
 
-- In contrast to creating Python packages, you can create a single Python file, that is, a Python module.
-
-Example of a simple module (see `my_module.py`):
-```py
-#!/usr/bin/env python
-
-def my_function(i):
-    print(f"Hello from my_function in my_module: {i}")
-
-variable_in_module = 42
-my_function(variable_in_module)
-```
-With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type `/path/to/my_module.py` to run this Python script. If you don't put the shebang, you can also type
-```sh
-python ./my_module.py
-```
-or
-```sh
-python -m my_module
-```
-to run it.
-
-
-Example of a simple package:
-```
-my_package/
-├── __init__.py
-├── module1.py
-└── module2.py
-```
-- The `__init__.py` file can be empty or can contain package-level initialization code, that is,  code that is executed when the package is imported. As of Python 3.3 and later, it is not strictly necessary to include an `__init__.py` file in the root directory of your project to consider it a package. In modern Python, implicit namespace packages are supported, which means you can have a directory structure without the need for an `__init__.py` file at every level. However, if you're working with older versions of Python (before 3.3) or if you want to ensure compatibility with tools and practices that expect the presence of `__init__.py` files, you might still include it.
-
-## Running your Python project
+### Local run
 
 1. If you are in the parent directory of `pyproject/`, you can run the Python script `__main__.py` from the terminal using the following command:
 ```sh
@@ -102,6 +71,30 @@ from .module2 import another_function
 Now, when someone imports the package (`import pyproject`), they can directly access `some_function` and `another_function`.
 
 NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__new__()` are called dunder files, variables, and methods, respectively.
+
+# Python modules
+
+- In contrast to creating Python packages, you can create a single Python file, that is, a Python module.
+
+Example of a simple module (see `my_module.py`):
+```py
+#!/usr/bin/env python
+
+def my_function(i):
+    print(f"Hello from my_function in my_module: {i}")
+
+variable_in_module = 42
+my_function(variable_in_module)
+```
+With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type `/path/to/my_module.py` to run this Python script. If you don't put the shebang, you can also type
+```sh
+python ./my_module.py
+```
+or
+```sh
+python -m my_module
+```
+to run it.
 
 ## `__all__` variable
 
