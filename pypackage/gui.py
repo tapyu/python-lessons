@@ -12,7 +12,7 @@ root.withdraw()  # Hide the main window
 
 file_path = filedialog.askopenfilename(
     title="Select a File",
-    filetypes=[("Excel files (.xls)", "*.xls"), ("All files", "*.*")],
+    filetypes=[("Excel files (*.xls)", "*.xls"), ("All files", "*.*")],
 )
 
 assert os.path.isfile(file_path), f"File not found: {file_path}"
