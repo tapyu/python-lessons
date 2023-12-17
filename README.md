@@ -1,3 +1,6 @@
+# An example of how not having package management can mess things up
+
+
 TODO:
 
 https://stackoverflow.com/questions/77664095/what-are-the-differences-between-pipx-and-pip-user
