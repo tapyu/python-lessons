@@ -19,6 +19,7 @@
 
 - Packaging is [the process of creating and uploading a Python distribution to be used by yourself and others](https://youtu.be/QX_Nhu1zhlg?t=433)
 
+![](./assets/history.png)
 
 TODO:
 
