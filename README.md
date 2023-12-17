@@ -47,7 +47,7 @@
 
 > NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__new__()` are called dunder files, variables, and methods, respectively.
 
-## Running your Python package
+## Running a Python package
 
 ### Local run
 
@@ -83,6 +83,11 @@ def my_function(i):
 variable_in_module = 42
 my_function(variable_in_module)
 ```
+
+## Running a Python module
+
+### Local run
+
 With the shebang `#!/usr/bin/env python` and by allowing execution permission, you can simply type `/path/to/my_module.py` to run this Python script. If you don't put the shebang, you can also type
 ```sh
 python ./my_module.py
@@ -93,10 +98,10 @@ python -m my_module
 ```
 to run it.
 
-## `__all__` variable
+# `__all__` variable
 
 The `__all__` variable in a Python file is used to define what symbols (functions, classes, or variables) should be considered as part of:
-- A package's "public API": When you declare the `__all__` variable in the `__init__.py` file of a Python package, something like
+- A package's "public API": When you declare the `__all__` variable in the `__init__.py` file of a Python package, e.g.,
 ```py
 __all__ = [
     "a_variable_name",
@@ -106,4 +111,4 @@ __all__ = [
 ]
 ```
 and someone imports this package using the `from package_name import *` syntax, only those variables, classes, and methods defined in `__all__` will be imported.
-- A module (that is, a `.py` file): It works in the very same way, that is, when someone uses the syntax `from my_package.my_module import *` those variables, classes, and methods defined in `__all__` will be imported.
+- A module (that is, a `.py` file): It works in the very same way, that is, when someone uses the syntax `from my_package.my_module import *`, only those variables, classes, and methods defined in `__all__` will be imported.
