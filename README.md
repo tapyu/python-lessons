@@ -1,4 +1,6 @@
-# An example of how not having package management can mess things up
+# Python Package managment
+
+> NOTE: [An example of how not having package management can mess things up](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s)
 
 
 TODO:
