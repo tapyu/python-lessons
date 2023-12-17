@@ -1,4 +1,10 @@
-# A typical Python package structure
+# Python packages
+
+- A Python package is a directory structure containing Python codes which perform a specific set of functionalities.
+- Packages can contain sub-packages and modules (`.py` files), forming a nested structure.
+- In addition to sub-packages and modules, a Python package also contains files related to package managenment and versioning.
+
+## A typical Python package structure
 
 ```
 .
@@ -13,12 +19,21 @@
 └── README.md
 ```
 
+## The `__init__.py` file
+
+- Each Python package (directory) contains a special `__init__.py` file (which can be empty) to indicate that this directory should be treated as a package.
 - The `__init__.py` file in a Python package serves as the initialization code for the package, and it is executed when the package is imported, that is, `import pyproject`. The main purpose of this file is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. It servers as a the "package's API".
-- `__main__.py` allows you to define a main entry point for your Python package when it is run as a module. You can run `python -m pyproject` only if you have `pyproject/__main__.py`. It provides a way to structure your package for script execution, defining behaviors specific to running the package from the command line. The `__init__.py` file is executed first, and then the `__main__.py` file is executed, but the scope of variables in the `__init__.py` file is separate from the scope of variables in the `__main__.py` file.
 
-## Package vs. Module
+## The `__main__.py` file
 
-- A module is a single Python file containing Python code. It serves as a way to organize Python code, allowing you to encapsulate related functionality into a single file. Modules can define functions, classes, and variables, which can be used by other modules or scripts.
+- `__main__.py` allows you to define a main entry point for your Python package when it is run as a module, that is, `python -m pyproject`. This command works only if:
+    1. The file `pyproject/__main__.py` exists.
+    2. You are in the parent directory of `pyproject` or if the path to `pyproject` is searchable by `python`.
+-  It provides a way to structure your package for script execution, defining behaviors specific to running the package from the command line.
+
+# Python modules
+
+- In contrast to creating Python packages, you can create a single Python file, that is, a Python module.
 
 Example of a simple module (see `my_module.py`):
 ```py
@@ -40,7 +55,6 @@ python -m my_module
 ```
 to run it.
 
-- A package is a way of organizing related modules into a directory hierarchy. It contains a special `__init__.py` file (which can be empty) to indicate that the directory should be treated as a package. Packages can contain sub-packages and modules, forming a nested structure.
 
 Example of a simple package:
 ```
