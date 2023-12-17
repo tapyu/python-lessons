@@ -1,4 +1,4 @@
-# A typical Python structure
+# A typical Python package structure
 
 ```
 .
