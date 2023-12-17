@@ -69,6 +69,8 @@
     python -m my_package
     ```
 
+### Global run (`PYTHONPATH` environment variable)
+
 # Python modules
 
 - In contrast to creating Python packages, you can create a single Python file, that is, a Python module.
