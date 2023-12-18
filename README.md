@@ -68,13 +68,10 @@ The utimate conclusion is:
 
 ### setuptools/distutils
 
-### poetry
-
 TODO:
-
-https://dev.to/bowmanjd/how-do-i-install-a-python-command-line-tool-or-script-hint-pipx-3i2
-
 https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages
+
+### poetry
 
 
 [1]: https://www.geeksforgeeks.org/source-distribution-and-built-distribution-in-python/
