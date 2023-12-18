@@ -26,9 +26,9 @@ A software that
 - Installs those package dependencies in their specific versions. It is usually done within a isolated environment. When the sofware is run on another system, the version of the dependencies is "locked" to those versions listed in `poetry.lock` to ensure reproducibility.
 > NOTE: [An](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s) example of how not having package manager can mess things up.
 
-### [Packaging (AKA publishing)](https://youtu.be/QX_Nhu1zhlg?t=433)
+### Packaging (AKA publishing)
 
-The process of building a Python distribution and uploading it on a online software repository (such as PyPI).
+[The](https://youtu.be/QX_Nhu1zhlg?t=433) process of building a Python distribution and uploading it on a online software repository (such as PyPI).
 
 ### Package management
 
