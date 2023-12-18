@@ -43,7 +43,7 @@ A software that
 - Downloads and installs all the package dependencies that the desired package needs.
 - Solves version conflicts between the packages' dependencies. Some package managers provide mechanisms for creating virtual environments to isolate the dependencies of each installed Python package.
 - Installs a package at a specific version, if it is required.
-- Uninstalls a previously installed packagec (and its dependencies).
+- Uninstalls a previously installed package (and its dependencies).
 - Is usually required by end users.
 
 # Tools
