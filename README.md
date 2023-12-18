@@ -38,8 +38,9 @@ A software that
 ### Package management
 
 A software that
-- Downloads and installs Python packages which were published in a package index registry, such as PyPI, and make them system- or user-wide callable.
-- Downloads and installs all the package dependencies that the wanted package needs.
+- Installs Python packages which is either downloaded from a remote package index, such as PyPI, or availabe on the local machine.
+- Make the installed Python packages system- or user-wide callable by creating shell scripts in `$PATH`.
+- Downloads and installs all the package dependencies that the desired package needs.
 - Solves version conflicts between the packages' dependencies. Some package managers provide mechanisms for creating virtual environments to isolate the dependencies of each installed Python package.
 - Installs a package at a specific version, if it is required.
 - Uninstalls a previously installed packagec (and its dependencies).
