@@ -54,7 +54,6 @@ A software that
 | `venv` | Python Standard Library (Python 3.3+) | ✅ | ✅ | :x: | :x: | Standard library module for creating virtual environments |
 | `pyvenv` | Python 3.3 - 3.6 | ✅ | ✅ | :x: | :x: | Script for creating virtual environments; replaced by `venv` in later Python versions |
 | `virtualenv` | 2007 | ✅ | ✅ | :x: | :x: | Third-party tool for creating virtual environments; often used with `pip` |
-| `virtualenvwrapper` | 2010 | ✅ | ✅ | :x: | :x: | Adds enhancements and workflow improvements to `virtualenv` |
 | `poetry` |  |  |  |  |  | [Locks](https://youtu.be/-QSUyDvHQGY?t=245) the dependency with the `poetry.lock` file, which is automatically updated when wanted; [contains](https://youtu.be/-QSUyDvHQGY?t=339) both development and production dependencies within the same file (`pyproject.toml`) |
 
 
