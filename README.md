@@ -11,7 +11,8 @@
 - **Built Distribution (bdist)**: It creates distribution which includes .pyc files(python bytecode), .so/.dll/.dylib for binary modules, .exe if using [pyinstaller](https://pyinstaller.org/en/stable/) on Windows, data files… but no `setup.py`. The result is an archive that is specific to a platform (for example linux-x86_64) and to a version of Python. That can be installed and then used directly by extracting it into the root of your filesystem (executables are in `/usr/bin` (or equivalent), data files in `/usr/share`, modules in `/usr/lib/pythonX.X/site-packages/…`).
 
 
-# Taks
+# Tasks
+> WARNING: These tasks do not refer to specific Python packages or external software. Rather, it refers to functionalities that one desires throughout the Python packaging process.
 
 ### Virtual environments
 
