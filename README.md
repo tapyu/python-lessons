@@ -98,25 +98,26 @@ In the parent directory of `pypackage/`, tou can run
 pip install .
 ```
 - To install this Python package locally, that is, from the source code in `pypackage/`.
-- Pip uses the information from the `pyproject.toml` and `poetry.lock` files to install your project and its dependencies.
+- `pip` uses the information from the `pyproject.toml` and `poetry.lock` files to install your project and its dependencies.
 - If the dependencies are not found on your local machine or if their version doesn't match the requirements listed in `pyproject.toml`, `pip` downloads installs the Python packages at the correct version from PyPI.
 - In the `pyproject.toml` file, `pip` uses the information
-```toml
-[tool.poetry.scripts]
-correcao = "pypackage.__main__:main"
-```
-to generate a callable script, which is stored at `$HOME/.local/bin/correcao`. This file is an executable Python script with the following content
-```py
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
-import re
-import sys
-from pypackage.__main__ import main
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(main())
-```
-In short, this executable Python script run `pypackage.__main__`, where `pypackage` is the Python package which is now located at `$HOME/.local/lib/pythonX.XX/site-packages/`.
+    ```toml
+    [tool.poetry.scripts]
+    correcao = "pypackage.__main__:main"
+    ```
+    to generate a callable script, which is stored at `$HOME/.local/bin/correcao`. This file is an executable Python script with the following content
+    ```py
+    #!/usr/bin/python3
+    # -*- coding: utf-8 -*-
+    import re
+    import sys
+    from pypackage.__main__ import main
+    if __name__ == '__main__':
+        sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+        sys.exit(main())
+    ```
+- In short, this executable Python script run `pypackage.__main__`, where `pypackage` is the Python package which is now located at `$HOME/.local/lib/pythonX.XX/site-    packages/`.
+- You can use `pipx` instead of `pipx`.
 
 # Python modules
 
