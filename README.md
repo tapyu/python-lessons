@@ -69,7 +69,7 @@
     python -m my_package
     ```
 
-### Global run (`PYTHONPATH` environment variable)
+### Global run via the `PYTHONPATH` environment variable
 
 In order to run `my_package` globally (that is, from anywhere), you must set the `PYTHONPATH` environment variable.
 
