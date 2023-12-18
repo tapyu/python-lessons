@@ -35,8 +35,9 @@ A software that
 A software that
 - Downloads and installs Python packages which were published in a package index registry, such as PyPI, and make them system- or user-wide callable.
 - Downloads and installs all the package dependencies that the wanted package needs. Some package managers provide mechanisms for creating isolated or virtual environments to install them.
+- Solves version conflicts between the packages' dependencies.
 - Installs a package at a specific version, if it is required.
-- Uninstalls a previously installed package.
+- Uninstalls a previously installed packagec (and its dependencies).
 
 # Tools
 
