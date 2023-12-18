@@ -45,13 +45,12 @@ A software that
 | ---  | :---:  | :---:    | :---: | :---:       | :---:    |  --- |
 | Anaconda and [`conda`](https://github.com/conda/conda) | ??? | ✅ | ✅ | :x: | ✅ | [Contains](https://youtu.be/3J02sec99RM?t=156) its own package manager, `conda`; [Limited](https://youtu.be/-QSUyDvHQGY?t=50) number of available packages; `pip` can be used within a `conda` virtual environment, but `conda` cannot handle the packages installed by `pip`; tailored for scientific applications; [removes](https://youtu.be/-QSUyDvHQGY?t=143) both the package and its dependencies; [doesn't](https://youtu.be/-QSUyDvHQGY?t=155) lock files; doesn't separate production and development dependencies within the same file. `environment.yml` and `environment-dev.yml` are used instead. |
 | `distutils`/[`setuptools`](https://github.com/pypa/setuptools) | 2000/2004 | :x: | ✅ | ✅ | :x: | `distutils` is a module available since Python 1.6 that provides a basic infrastructure for packaging Python modules and distributing them, but lacks some advanced features; `setuptools` is a third-party library that builds on top of `distutils` and enhances its functionality. Although it was a popular tool for packaging Python libraries in the past, `setuptools` may be considered obsolete for some developers; [To](https://youtu.be/pA4XriRWVxQ?t=281) actually publish your Python library, you need to use another package `twine`|
-| [`virtualenv`](https://github.com/pypa/virtualenv) | 2007 | ✅ | :x: | :x: | :x: | Creates isolated Python environments; often used with `pip` for dependency management |
+| [`virtualenv`](https://github.com/pypa/virtualenv) | 2007 | ✅ | :x: | :x: | :x: | Standard Python environments; often used with `pip` for dependency management |
 | `pip` | 2008 | :x: | ✅ | :x: | ✅ | Default Python package manager; used with `virtualenv` for isolated environments; PyPI is the default package index; [doesn't](https://youtu.be/-QSUyDvHQGY?t=132) uninstall the dependency packages; [locks](https://youtu.be/-QSUyDvHQGY?t=200) dependencies with the `requirements.txt` file, but requires manual modifications, which is error-prone; [doesn't](https://youtu.be/-QSUyDvHQGY?t=317) separate production and development dependency within the same file. `requirements.txt` and `requirements-dev.txt` are used instead; [To](https://youtu.be/pA4XriRWVxQ?t=411) update the `requirements.txt` from the current installed packages, you can run `pip freeze > requirements.txt`; general-purpose package installer for both libraries and apps with no environment isolation |
 | [`pipx`](https://github.com/pypa/pipx) | 2019 |   ✅ | ✅ | :x: | ✅ | help you install and run end-user applications written in Python; closely related to pip. In fact, it uses pip, but is focused on installing and managing Python packages that can be run from the command line directly as applications; adds isolation yet still makes the apps available in your shell: `pipx` creates an isolated environment for each application and its associated packages; `pipx` does not replace `pip` or virtual environments. For normal Python development, use virtual environments and pip or use a tool like Poetry. What pipx provides is isolation and convenience. `pipx` can be used to install any Python package with executables that you want to access from the command line, system-wide.|
 | `pipenv` | 2017 | ✅ | ✅ |  ✅ | ✅ | [Can](https://youtu.be/3J02sec99RM?t=170) be used used to manave other vitual environments, such as `virtualenv` and Anaconda; Has hability to decide which virtual env must be enabled when entering in a directory.  |
 | `venv` | Python Standard Library (Python 3.3+) | ✅ | ✅ | :x: | :x: | Standard library module for creating virtual environments |
 | `pyvenv` | Python 3.3 - 3.6 | ✅ | ✅ | :x: | :x: | Script for creating virtual environments; replaced by `venv` in later Python versions |
-| `virtualenv` | 2007 | ✅ | ✅ | :x: | :x: | Third-party tool for creating virtual environments; often used with `pip` |
 | `poetry` | 2018 |  |  |  |  | [Locks](https://youtu.be/-QSUyDvHQGY?t=245) the dependency with the `poetry.lock` file, which is automatically updated when wanted; [contains](https://youtu.be/-QSUyDvHQGY?t=339) both development and production dependencies within the same file (`pyproject.toml`) |
 
 ## Conclusions
@@ -59,10 +58,10 @@ A software that
 The utimate conclusion is:
 - We have a trillion tools that is intended to solve these issues.
 - When it comes to project dependency management, packaging, and virtual environments, Poetry is the way-to-go.
-  > Warning: Poetry is not intended to be a package manager! You should use `pip` or `pipx` instead.
+- To install Python applications, use `pipx` as it provides packages isolations. 
 - Honorable mentions to
   - `setuptools`: had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
-  - `pip`: has become the default package manager to install packages from PyPI or elsewhere.
+  - `pip`: has become the default package manager to install packages from PyPI or elsewhere. ALthough it doesn't provide package isolation, it is still widely used and can easilly be adoped instead of `pipx`.
   - `conda`: a good package manager tailored to scientific applications.
 
 # Examples
@@ -73,19 +72,7 @@ The utimate conclusion is:
 
 TODO:
 
-https://trello.com/c/66EaMW4j/86-general-knowledge-except-errors-and-warnings-pkg-mng-and-virtenv-packaging
-
-https://dev.to/bowmanjd/python-tools-for-managing-virtual-environments-3bko
-
 https://dev.to/bowmanjd/how-do-i-install-a-python-command-line-tool-or-script-hint-pipx-3i2
-
-https://www.reddit.com/r/learnpython/comments/jq5miv/pip_vs_pipx/
-
-https://github.com/pypa/pipx
-
-https://stackoverflow.com/questions/59286983/how-to-run-a-script-using-pyproject-toml-settings-and-poetry
-
-https://ericmjl.github.io/blog/2016/12/24/how-to-make-your-python-scripts-callable-from-the-command-line/
 
 https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages
 
