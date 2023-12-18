@@ -117,7 +117,7 @@ pip install .
         sys.exit(main())
     ```
 - In short, this executable Python script run `pypackage.__main__`, where `pypackage` is the Python package which is now located at `$HOME/.local/lib/pythonX.XX/site-packages/`.
-- You can use `pipx` instead of `pipx`.
+- You can use `pipx` instead of `pip`.
 
 # Python modules
 
