@@ -43,7 +43,7 @@ A software that
 
 | Tool | Year | Virtual env | Project dependency | Packaging | Package manager | Comments |
 | ---  | :---:  | :---:    | :---: | :---:       | :---:    |  --- |
-| [`conda`](https://github.com/conda/conda) | 2012 | ✅ | ✅ | :x: | ✅ | [Limited](https://youtu.be/-QSUyDvHQGY?t=50) number of available packages; `pip` can be used within a `conda` virtual environment, but `conda` cannot track the packages installed by `pip`; tailored for scientific applications; [removes](https://youtu.be/-QSUyDvHQGY?t=143) both the package and its dependencies; [doesn't](https://youtu.be/-QSUyDvHQGY?t=155) lock files; doesn't separate production and development dependencies within the same file. `environment.yml` and `environment-dev.yml` are used instead. |
+| [`conda`](https://github.com/conda/conda) | 2012 | ✅ | ✅ | :x: | ✅ | [Limited](https://youtu.be/-QSUyDvHQGY?t=50) number of available packages; `pip` can be used within a `conda` virtual environment, but `conda` cannot handle the packages installed by `pip`; tailored for scientific applications; [removes](https://youtu.be/-QSUyDvHQGY?t=143) both the package and its dependencies; [doesn't](https://youtu.be/-QSUyDvHQGY?t=155) lock files; doesn't separate production and development dependencies within the same file. `environment.yml` and `environment-dev.yml` are used instead. |
 | [`setuptools`](https://github.com/pypa/setuptools) | 2004 | :x: | ✅ | ✅ | :x: | Used for packaging and distribution; often used with `pip` and virtual environments |
 | `distutils` | Python Standard Library | :x: | ✅ | ✅ | :x: | Basic packaging functionality; lacks some advanced features |
 | `virtualenv` | 2007 | ✅ | ✅ | :x: | :x: | Creates isolated Python environments; often used with `pip` for dependency management |
