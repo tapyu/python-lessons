@@ -61,7 +61,7 @@ The utimate conclusion is:
 - To install Python applications, use `pipx` as it provides packages isolations. 
 - Honorable mentions to
   - `setuptools`: had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
-  - `pip`: has become the default package manager to install packages from PyPI or elsewhere. ALthough it doesn't provide package isolation, it is still widely used and can easilly be adoped instead of `pipx`.
+  - `pip`: is the default package manager to install packages from PyPI or elsewhere. Although it doesn't provide package isolation, it is still widely used and can easilly be adoped instead of `pipx`.
   - `conda`: a good package manager tailored to scientific applications.
 
 # Examples
