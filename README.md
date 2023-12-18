@@ -1,4 +1,4 @@
-# Python packages
+# Python packages (AKA libraries)
 
 - [A Python package][1] is a directory structure containing Python codes which perform a specific set of functionalities.
 - Packages can contain sub-packages and modules (`.py` files), forming a nested structure.
