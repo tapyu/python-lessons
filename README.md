@@ -43,8 +43,20 @@ A software that
 
 | Tool | Year | Virtual env | Project dependency | Packaging | Package manager | Comments |
 | ---  | :---:  | :---:    | :---: | :---:       | :---:    |  --- |
-| [`conda`](https://github.com/conda/conda) | 2012 | ✅ | ✅ | :x: | ✅ | Limited number of available packages; tailored for scientific applications |
-| [`setuptools`](https://github.com/pypa/setuptools) |  |  |  |  |  |  |
+| [`conda`](https://github.com/conda/conda) | 2012 | ✅ | ✅ | :x: | ✅ | [Limited](https://youtu.be/-QSUyDvHQGY?t=50) number of available packages; `pip` can be used within a `conda` virtual environment, but `conda` cannot track the packages installed by `pip`; tailored for scientific applications; [removes](https://youtu.be/-QSUyDvHQGY?t=143) both the package and its dependencies; [doesn't](https://youtu.be/-QSUyDvHQGY?t=155) lock files; doesn't separate production and development dependencies within the same file. `environment.yml` and `environment-dev.yml` are used instead. |
+| [`setuptools`](https://github.com/pypa/setuptools) | 2004 | :x: | ✅ | ✅ | :x: | Used for packaging and distribution; often used with `pip` and virtual environments |
+| `distutils` | Python Standard Library | :x: | ✅ | ✅ | :x: | Basic packaging functionality; lacks some advanced features |
+| `virtualenv` | 2007 | ✅ | ✅ | :x: | :x: | Creates isolated Python environments; often used with `pip` for dependency management |
+| `pip` | 2008 | :x: | ✅ | :x: | ✅ | Python package installer; used with `virtualenv` for isolated environments; PyPI is the default package index; [doesn't](https://youtu.be/-QSUyDvHQGY?t=132) uninstall the dependency packages; [locks](https://youtu.be/-QSUyDvHQGY?t=200) dependencies with the `requirements.txt` file, but requires manual modifications, which is error-prone; [doesn't](https://youtu.be/-QSUyDvHQGY?t=317) separate production and developtment dependency within the same file. `requirements.txt` and `requirements-dev.txt` are used instead |
+| `pipx` |  |  |  |  |  |  |
+| `conda` | 2012 | ✅ | ✅ | :x: | ✅ | Cross-language package manager; emphasizes environment reproducibility |
+| `pipenv` | 2017 | ✅ | ✅ | ✅ | ✅ | Manages project dependencies and virtual environments; aims for deterministic builds |
+| `venv` | Python Standard Library (Python 3.3+) | ✅ | ✅ | :x: | :x: | Standard library module for creating virtual environments |
+| `pyvenv` | Python 3.3 - 3.6 | ✅ | ✅ | :x: | :x: | Script for creating virtual environments; replaced by `venv` in later Python versions |
+| `virtualenv` | 2007 | ✅ | ✅ | :x: | :x: | Third-party tool for creating virtual environments; often used with `pip` |
+| `virtualenvwrapper` | 2010 | ✅ | ✅ | :x: | :x: | Adds enhancements and workflow improvements to `virtualenv` |
+| `poetry` |  |  |  |  |  | [Locks](https://youtu.be/-QSUyDvHQGY?t=245) the dependency with the `poetry.lock` file, which is automatically updated when wanted; [contains](https://youtu.be/-QSUyDvHQGY?t=339) both development and production dependencies within the same file (`pyproject.toml`) |
+
 
 ## Conclusions
 
