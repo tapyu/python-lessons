@@ -24,7 +24,7 @@ A software that
 - Adds or Removes packages dependency on a dependency file (such as `pyproject.toml`) of the project.
 - Writes on a file (such as `poetry.lock`) the version of all packages required to run the python project.
 - Installs those package dependencies in their specific versions. It is usually done within a isolated environment. When the sofware is run on another system, the version of the dependencies is "locked" to those versions listed in `poetry.lock` to ensure reproducibility.
-> NOTE: [An](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s) example of how not having package manager can mess things up.
+> NOTE: [An](https://www.youtube.com/watch?v=QX_Nhu1zhlg&t=193s) example of how not having dependency manager can mess things up.
 
 ### Packaging (AKA publishing)
 
