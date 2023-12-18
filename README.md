@@ -43,19 +43,17 @@ A software that
 
 | Tool | Year | Virtual env | Project dependency | Packaging | Package manager | Comments |
 | ---  | :---:  | :---:    | :---: | :---:       | :---:    |  --- |
-| [`conda`](https://github.com/conda/conda) | 2012 | ✅ | ✅ | :x: | ✅ | [Limited](https://youtu.be/-QSUyDvHQGY?t=50) number of available packages; `pip` can be used within a `conda` virtual environment, but `conda` cannot handle the packages installed by `pip`; tailored for scientific applications; [removes](https://youtu.be/-QSUyDvHQGY?t=143) both the package and its dependencies; [doesn't](https://youtu.be/-QSUyDvHQGY?t=155) lock files; doesn't separate production and development dependencies within the same file. `environment.yml` and `environment-dev.yml` are used instead. |
-| [`setuptools`](https://github.com/pypa/setuptools) | 2004 | :x: | ✅ | ✅ | :x: | Used for packaging and distribution; often used with `pip` and virtual environments |
-| `distutils` | Python Standard Library | :x: | ✅ | ✅ | :x: | Basic packaging functionality; lacks some advanced features |
-| `virtualenv` | 2007 | ✅ | ✅ | :x: | :x: | Creates isolated Python environments; often used with `pip` for dependency management |
-| `pip` | 2008 | :x: | ✅ | :x: | ✅ | Python package installer; used with `virtualenv` for isolated environments; PyPI is the default package index; [doesn't](https://youtu.be/-QSUyDvHQGY?t=132) uninstall the dependency packages; [locks](https://youtu.be/-QSUyDvHQGY?t=200) dependencies with the `requirements.txt` file, but requires manual modifications, which is error-prone; [doesn't](https://youtu.be/-QSUyDvHQGY?t=317) separate production and developtment dependency within the same file. `requirements.txt` and `requirements-dev.txt` are used instead |
+| Anaconda and [`conda`](https://github.com/conda/conda) | ??? | ✅ | ✅ | :x: | ✅ | [Contains](https://youtu.be/3J02sec99RM?t=156) its own package manager, `conda`; [Limited](https://youtu.be/-QSUyDvHQGY?t=50) number of available packages; `pip` can be used within a `conda` virtual environment, but `conda` cannot handle the packages installed by `pip`; tailored for scientific applications; [removes](https://youtu.be/-QSUyDvHQGY?t=143) both the package and its dependencies; [doesn't](https://youtu.be/-QSUyDvHQGY?t=155) lock files; doesn't separate production and development dependencies within the same file. `environment.yml` and `environment-dev.yml` are used instead. |
+| [`setuptools`](https://github.com/pypa/setuptools)/`distutils` | ??? | :x: | ✅ | ✅ | :x: | `distutils` is a module available since Python 1.6 that provides a basic infrastructure for packaging Python modules and distributing them; `setuptools` is a third-party library that builds on top of `distutils` and enhances its functionality. |
+|  | Python Standard Library | :x: | ✅ | ✅ | :x: | Basic packaging functionality; lacks some advanced features |
+| [`virtualenv`](https://github.com/pypa/virtualenv) | 2007 | ✅ | :x: | :x: | :x: | Creates isolated Python environments; often used with `pip` for dependency management |
+| `pip` | 2008 | :x: | ✅ | :x: | ✅ | Default Python package manager; used with `virtualenv` for isolated environments; PyPI is the default package index; [doesn't](https://youtu.be/-QSUyDvHQGY?t=132) uninstall the dependency packages; [locks](https://youtu.be/-QSUyDvHQGY?t=200) dependencies with the `requirements.txt` file, but requires manual modifications, which is error-prone; [doesn't](https://youtu.be/-QSUyDvHQGY?t=317) separate production and developtment dependency within the same file. `requirements.txt` and `requirements-dev.txt` are used instead |
 | `pipx` |  |  |  |  |  |  |
-| `conda` | 2012 | ✅ | ✅ | :x: | ✅ | Cross-language package manager; emphasizes environment reproducibility |
-| `pipenv` | 2017 | ✅ | ✅ | ✅ | ✅ | Manages project dependencies and virtual environments; aims for deterministic builds |
+| `pipenv` | 2017 | ✅ | ✅ | ✅ | ✅ | [Can](https://youtu.be/3J02sec99RM?t=170) be used used to manave other vitual environments, such as `virtualenv` and Anaconda; Has hability to decide which virtual env must be enabled when entering in a directory.  |
 | `venv` | Python Standard Library (Python 3.3+) | ✅ | ✅ | :x: | :x: | Standard library module for creating virtual environments |
 | `pyvenv` | Python 3.3 - 3.6 | ✅ | ✅ | :x: | :x: | Script for creating virtual environments; replaced by `venv` in later Python versions |
 | `virtualenv` | 2007 | ✅ | ✅ | :x: | :x: | Third-party tool for creating virtual environments; often used with `pip` |
 | `poetry` |  |  |  |  |  | [Locks](https://youtu.be/-QSUyDvHQGY?t=245) the dependency with the `poetry.lock` file, which is automatically updated when wanted; [contains](https://youtu.be/-QSUyDvHQGY?t=339) both development and production dependencies within the same file (`pyproject.toml`) |
-
 
 ## Conclusions
 
@@ -65,15 +63,14 @@ The utimate conclusion is:
   > Warning: Poetry is not intended to be a package manager! You should use `pip` or `pipx` instead.
 - Honorable mentions to
   - `setuptools`: had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
-  - `PyPI` (Python Package Index): has become the official third-party software repository for Python. However, it has nothing to do with the package dependency, packaging, and creating virtual environments;
   - `pip`: has become the default package manager to install packages from PyPI or elsewhere.
   - `conda`: a good package manager tailored to scientific applications.
- 
-## Advantage of Poetry over the other tools
 
-- It wonderfully does the script install in the `[tool.poetry.scripts]` section. It was usually done by `setuptools` and `setup.py`.
+# Examples
 
-### setuptools
+### setuptools/distutils
+
+### poetry
 
 TODO:
 
