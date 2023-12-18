@@ -38,7 +38,7 @@ A software that
 ### Package management
 
 A software that
-- Installs Python packages which is either downloaded from a remote package index, such as PyPI, or availabe on the local machine.
+- Installs Python packages which is either downloaded from a remote package index, such as PyPI, or availabe on the [local machine][6].
 - Make the installed Python packages system- or user-wide callable by creating shell scripts in `$PATH`.
 - Downloads and installs all the package dependencies that the desired package needs.
 - Solves version conflicts between the packages' dependencies. Some package managers provide mechanisms for creating virtual environments to isolate the dependencies of each installed Python package.
@@ -140,6 +140,7 @@ A software that
 
 - [Locks](https://youtu.be/-QSUyDvHQGY?t=245) the dependency with the `poetry.lock` file, which is automatically updated when wanted.
 - [Contains](https://youtu.be/-QSUyDvHQGY?t=339) both development and production dependencies within the same file (`pyproject.toml`).
+- Package managers, such as `pip` and `pipx`, can use `poetry.lock` and `pyproject.toml` to [locally install][6] the current Python project
 
 # Conclusions
 
@@ -160,3 +161,4 @@ The utimate conclusions are:
 [3]: https://dev.to/icncsx/python-packaging-sdist-vs-bdist-5ekb
 [4]: https://dev.to/bowmanjd/how-do-i-install-a-python-command-line-tool-or-script-hint-pipx-3i2
 [5]: https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-so-it-finds-my-modules-packages
+[6]: https://github.com/tapyu/python-lessons/tree/dir-structure?tab=readme-ov-file#local-installation-of-the-python-project-via-a-packager-manager
