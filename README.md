@@ -58,7 +58,7 @@ A software that
 The utimate conclusion is:
 - We have a trillion tools that is intended to solve these issues.
 - When it comes to project dependency management, packaging, and virtual environments, Poetry is the way-to-go.
-- To install Python applications, use `pipx` as it provides packages isolations. 
+- To install Python applications, use `pipx` [as][4] it provides packages isolations. 
 - Honorable mentions to
   - `setuptools`: had been became a standard tool for building up a Python distribution. Nowadays, it may be consedered obsolete by some, though;
   - `pip`: is the default package manager to install packages from PyPI or elsewhere. Although it doesn't provide package isolation, it is still widely used and can easilly be adoped instead of `pipx`.
@@ -80,3 +80,4 @@ https://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-wind
 [1]: https://www.geeksforgeeks.org/source-distribution-and-built-distribution-in-python/
 [2]: https://youtu.be/QX_Nhu1zhlg?t=352&si=OOcG9cDoCnnzCYBE
 [3]: https://dev.to/icncsx/python-packaging-sdist-vs-bdist-5ekb
+[4]: https://dev.to/bowmanjd/how-do-i-install-a-python-command-line-tool-or-script-hint-pipx-3i2
