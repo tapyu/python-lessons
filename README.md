@@ -41,9 +41,10 @@ A software that
 
 > WARNING: virtual environments, python dependency management, packaging, and package manager aren't separated tasks, and many tools try to tackle some of them simutaneously.
 
-| Tool | Year | Virtual environments | Project dependency | Packaging | Package management |
-| ---  | :---:  | :---:                   | :---:                | :---:       | :---:                |
-| `setuptools` | 2004 | :x: | ✔ | :x: | ✔️ |
+| Tool | Year | Virtual env | Project dependency | Packaging | Package manager | Comments |
+| ---  | :---:  | :---:    | :---: | :---:       | :---:    |  --- |
+| [`conda`](https://github.com/conda/conda) | 2012 | ✅ | ✅ | :x: | ✅ | Limited number of available packages; tailored for scientific applications |
+| [`setuptools`](https://github.com/pypa/setuptools) |  |  |  |  |  |  |
 
 ## Conclusions
 
