@@ -41,7 +41,7 @@ A software that
 - Installs Python packages which is either downloaded from a remote package index, such as PyPI, or availabe on the [local machine][6].
 - Make the installed Python packages system- or user-wide callable by creating shell scripts in `$PATH`.
 - Downloads and installs all the package dependencies that the desired package needs.
-- Solves version conflicts between the packages' dependencies. Some package managers provide mechanisms for creating virtual environments to isolate the dependencies of each installed Python package.
+- Solves version conflicts between the packages' dependencies. Some package managers, like `pipx`, provide mechanisms for creating virtual environments to isolate the dependencies of each installed Python package.
 - Installs a package at a specific version, if it is required.
 - Uninstalls a previously installed package (and its dependencies).
 - Is usually required by end users.
