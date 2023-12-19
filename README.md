@@ -88,41 +88,32 @@ A software that
 ### `pip`
 
 | Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
+| :---:  | :---:    | :---: | :---: | :---: |
 | 2008 | :x: | ✅ | :x: | ✅ |
 
-- Default Python package manager; used with `virtualenv` for isolated environments.
-- PyPI is the default package index; [doesn't](https://youtu.be/-QSUyDvHQGY?t=132) uninstall the dependency packages.
-- [Locks](https://youtu.be/-QSUyDvHQGY?t=200) dependencies with the `requirements.txt` file, but requires manual modifications, which is error-prone.
+- Default and general-purpose package manager with no environment isolation.
+- PyPI is the default package index from where `pip` search and install packages
+- [Doesn't](https://youtu.be/-QSUyDvHQGY?t=132) uninstall dependency packages.
+- Within a isolated environment, `pip` can offer a rudimentary project dependency management by [locking](https://youtu.be/pA4XriRWVxQ?t=411) the packages in use via `pip freeze > requirements.txt`.
 - [Doesn't](https://youtu.be/-QSUyDvHQGY?t=317) separate production and development dependency within the same file. `requirements.txt` and `requirements-dev.txt` are used instead.
-- [To](https://youtu.be/pA4XriRWVxQ?t=411) update the `requirements.txt` from the current installed packages, you can run `pip freeze > requirements.txt`.
-- General-purpose package installer for both libraries and apps with no environment isolation.
 
 ### [`pipx`](https://github.com/pypa/pipx)
 
 | Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
-| 2019 |   ✅ | ✅ | :x: | ✅ |
+| :---:  | :---:    | :---: | :---: | :---:    |
+| 2019 |   ✅/:x: | ✅ | :x: | ✅ |
 
-- Install and runs end-user applications written in Python.
-- Closely related to pip. In fact, it uses pip, but is focused on installing and managing Python packages that can be run from the command line directly as applications.
-- Adds isolation yet still makes the apps available in your shell: `pipx` creates an isolated environment for each application and its associated packages.
-- `pipx` does not replace `pip` or virtual environments. For normal Python development, use virtual environments and `pip` or use a tool like Poetry.
-- What pipx provides is isolation and convenience. `pipx` can be used to install any Python package with executables that you want to access from the command line, system-wide.
+- Closely related to `pip`. In fact, it uses `pip`, but is focused on installing and managing Python packages that can be run from the command line directly as applications.
+- `pipx` creates an isolated environment for each application and its associated packages and yet makes the apps callable from your shell. However, `pipx` cannot create isolated environment for your Python projects. For this purpose, you should use `virtualenv`, `poetry`, or other similar tools.
+- `pipx` does not replace `pip` in the sense that `pipx` is tailored for installing system-wide Python applications, which directly interact with the end user. If you need to install packages dependencies that is required in a project, you should use `pip`, `poetry`, or other similar tools.
 
 ### `pipenv`
 
 | Year | Virtual env | Project dependency | Packaging | Package manager |
 | :---:  | :---:    | :---: | :---:       | :---:    |
 | 2017 | ✅ | ✅ |  ✅ | :x: |
-- [Can](https://youtu.be/3J02sec99RM?t=170) be used used to manave other vitual environments, such as `virtualenv` and Anaconda.
+- [Can](https://youtu.be/3J02sec99RM?t=170) be used used to manage other vitual environments, such as `virtualenv` and Anaconda.
 - Has hability to decide which virtual env must be enabled when entering in a directory.
-
-### `venv`
-
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
- | Python Standard Library (Python 3.3+) | ✅ | ✅ | :x: | :x: |
 
 ### `pyvenv`
 
@@ -131,6 +122,12 @@ A software that
 | Python 3.3 - 3.6 | ✅ | ✅ | :x: | :x: |
 
 - Replaced by `venv` in later Python versions (?).
+
+### `venv`
+
+| Year | Virtual env | Project dependency | Packaging | Package manager |
+| :---:  | :---:    | :---: | :---:       | :---:    |
+ | Python Standard Library (Python 3.3+) | ✅ | ✅ | :x: | :x: |
 
 ### `poetry`
 
