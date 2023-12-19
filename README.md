@@ -161,7 +161,7 @@ A software that
   </tr>
   <tr align="center">
     <td>2019</td>
-    <td>✅/:x:</td>
+    <td>✅ :x:</td>
     <td>✅</td>
     <td>:x:</td>
     <td>✅</td>
