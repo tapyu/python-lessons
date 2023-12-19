@@ -12,7 +12,7 @@
 
 
 # Tasks
-> WARNING: These tasks do not refer to specific Python packages or external software. Rather, it refers to functionalities that one desires throughout the development or usage (as an end user) phases.
+> WARNING: These tasks do not refer to specific Python packages or external software. Rather, it refers to functionalities that one desires throughout the development or production (as an end user) phases.
 
 ### Virtual environments
 
