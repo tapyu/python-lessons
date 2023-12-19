@@ -52,9 +52,22 @@ A software that
 
 ### Anaconda and [`conda`](https://github.com/conda/conda)
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
-| ??? | ✅ | ✅ | :x: | ✅ |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>???</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>:x:</td>
+    <td>✅</td>
+  </tr>
+</table>
 
 - [Contains](https://youtu.be/3J02sec99RM?t=156) its own package manager, `conda`.
 - [Limited](https://youtu.be/-QSUyDvHQGY?t=50) number of available packages.
@@ -66,9 +79,22 @@ A software that
 
 ### `distutils`/[`setuptools`](https://github.com/pypa/setuptools)/`twine`
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
-| 2000/2004 | :x: | ✅ | ✅ | :x: |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>2000/2004</td>
+    <td>:x:</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>:x:</td>
+  </tr>
+</table>
 
 - `distutils` is a module available since Python 1.6 that provides a basic infrastructure for packaging Python modules and distributing them, but lacks some advanced features.
 - `setuptools` is a third-party library that builds on top of `distutils` and enhances its functionality.
@@ -78,18 +104,44 @@ A software that
 
 ### [`virtualenv`](https://github.com/pypa/virtualenv)
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
-| 2007 | ✅ | :x: | :x: | :x: |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>2007</td>
+    <td>✅</td>
+    <td>:x:</td>
+    <td>:x:</td>
+    <td>:x:</td>
+  </tr>
+</table>
 
 - Standard Python virtual environments.
 - Often used with `pip` for dependency management.
 
 ### `pip`
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---: | :---: |
-| 2008 | :x: | ✅ | :x: | ✅ |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>2008</td>
+    <td>:x:</td>
+    <td>✅</td>
+    <td>:x:</td>
+    <td>✅</td>
+  </tr>
+</table>
 
 - Default and general-purpose package manager with no environment isolation.
 - PyPI is the default package index from where `pip` search and install packages
@@ -99,9 +151,22 @@ A software that
 
 ### [`pipx`](https://github.com/pypa/pipx)
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---: | :---:    |
-| 2019 |   ✅/:x: | ✅ | :x: | ✅ |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>2019</td>
+    <td>✅/:x:</td>
+    <td>✅</td>
+    <td>:x:</td>
+    <td>✅</td>
+  </tr>
+</table>
 
 - Closely related to `pip`. In fact, it uses `pip`, but is focused on installing and managing Python packages that can be run from the command line directly as applications.
 - `pipx` creates an isolated environment for each application and its associated packages and yet makes the apps callable from your shell. However, `pipx` cannot create isolated environment for your Python projects. For this purpose, you should use `virtualenv`, `poetry`, or other similar tools.
@@ -109,31 +174,84 @@ A software that
 
 ### `pipenv`
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
-| 2017 | ✅ | ✅ |  ✅ | :x: |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>2017</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>:x:</td>
+  </tr>
+</table>
+
 - [Can](https://youtu.be/3J02sec99RM?t=170) be used used to manage other vitual environments, such as `virtualenv` and Anaconda.
 - Has hability to decide which virtual env must be enabled when entering in a directory.
 
 ### `pyvenv`
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
-| Python 3.3 - 3.6 | ✅ | ✅ | :x: | :x: |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>???</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>:x:</td>
+    <td>:x:</td>
+  </tr>
+</table>
 
 - Replaced by `venv` in later Python versions (?).
 
 ### `venv`
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
- | Python Standard Library (Python 3.3+) | ✅ | ✅ | :x: | :x: |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>???</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>:x:</td>
+    <td>:x:</td>
+  </tr>
+</table>
 
 ### `poetry`
 
-| Year | Virtual env | Project dependency | Packaging | Package manager |
-| :---:  | :---:    | :---: | :---:       | :---:    |
-| 2018 | ✅ | ✅ | ✅ | :x: |
+<table align="center">
+  <tr align="center">
+    <th><b>Year</b></th>
+    <th><b>Virtual env</b></th>
+    <th><b>Project dependency</b></th>
+    <th><b>Packaging</b></th>
+    <th><b>Package manager</b></th>
+  </tr>
+  <tr align="center">
+    <td>2018<td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>:x:</td>
+  </tr>
+</table>
 
 - [Locks](https://youtu.be/-QSUyDvHQGY?t=245) the dependency with the `poetry.lock` file, which is automatically updated when wanted.
 - [Contains](https://youtu.be/-QSUyDvHQGY?t=339) both development and production dependencies within the same file (`pyproject.toml`).
