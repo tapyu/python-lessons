@@ -245,7 +245,7 @@ A software that
     <th><b>Package manager</b></th>
   </tr>
   <tr align="center">
-    <td>2018<td>
+    <td>2018</td>
     <td>✅</td>
     <td>✅</td>
     <td>✅</td>
