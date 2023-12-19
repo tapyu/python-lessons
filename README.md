@@ -5,6 +5,7 @@
 - In addition to sub-packages and modules, a Python package also contains files related to [dependency managenment and versioning](https://github.com/tapyu/python-lessons/tree/package-managers).
 
 ## A typical Python package structure
+> NOTE: This Python project uses `poetry` for dependency management, but [other tools][2] can also be used for this purpose.
 
 ```
 .
@@ -181,3 +182,4 @@ and someone imports this package using the `from package_name import *` syntax, 
 
 
 [1]: https://youtu.be/QX_Nhu1zhlg?t=352&si=OOcG9cDoCnnzCYBE
+[2]: https://github.com/tapyu/python-lessons/tree/packaging?tab=readme-ov-file#tools
