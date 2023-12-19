@@ -48,7 +48,7 @@ A software that
 
 # Tools
 
-> WARNING: virtual environments, python dependency management, packaging, and package management aren't separated tasks. Many tools try to tackle some of them simutaneously.
+> WARNING: virtual environments, dependency management, packaging, and package management aren't separated tasks. Many tools try to tackle some of them simutaneously.
 
 ### Anaconda and [`conda`](https://github.com/conda/conda)
 
