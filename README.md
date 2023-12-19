@@ -117,7 +117,7 @@ pip install .
         sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
         sys.exit(main())
     ```
-- In short, this executable Python script run `pypackage.__main__`, where `pypackage` is the Python package which is now located at `$HOME/.local/lib/pythonX.XX/site-packages/`.
+    In short, this executable Python script run `pypackage.__main__`, where `pypackage` is the Python package which is now located at `$HOME/.local/lib/pythonX.XX/site-packages/`.
 - You can use `pipx` instead of `pip`.
 - To uninstall it, just run
 ```sh
