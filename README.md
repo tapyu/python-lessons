@@ -99,7 +99,7 @@ A software that
 - `distutils` is a module available since Python 1.6 that provides a basic infrastructure for packaging Python modules and distributing them, but lacks some advanced features.
 - `setuptools` is a third-party library that builds on top of `distutils` and enhances its functionality.
 - Although it was a popular tool for publishing and locally installing Python libraries in the past, `setuptools` may be considered obsolete for some developers.
-- [To](https://youtu.be/pA4XriRWVxQ?t=281) actually publish your Python library, you need to use another package `twine`.
+- [To](https://youtu.be/pA4XriRWVxQ?t=281) actually publish your Python library, you need to use another package called `twine`.
 - Other usual files associated whith this approach are `setup.py`, `setup.cfg`, and `MANIFEST.in`.
 
 ### [`virtualenv`](https://github.com/pypa/virtualenv)
