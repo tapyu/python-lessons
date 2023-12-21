@@ -120,9 +120,9 @@ pip install .
     In short, this executable Python script run `pypackage.__main__`, where `pypackage` is the Python package which is now located at `$HOME/.local/lib/pythonX.XX/site-packages/`.
 - You can use `pipx` instead of `pip`.
 - To uninstall it, just run
-```sh
-pip uninstall pypackage
-```
+    ```sh
+    pip uninstall pypackage
+    ```
 
 # Python modules
 
