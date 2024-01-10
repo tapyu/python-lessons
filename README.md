@@ -106,7 +106,7 @@ pip install .
     [tool.poetry.scripts]
     correcao = "pypackage.__main__:main"
     ```
-    to generate a callable script, which is stored at `$HOME/.local/bin/correcao`. This file is an executable Python script with the following content
+    to generate a callable script, which is stored at `$HOME/.local/bin/correcao` (on GNU/Linux). This file is an executable Python script with the following content
     ```py
     #!/usr/bin/python3
     # -*- coding: utf-8 -*-
@@ -161,7 +161,7 @@ to run it.
 
 Alternatively, you can save `my_module.py` within one of the paths listed in the `$PATH` environment variable. In this case, if you put the shebang in `my_module.py` and make it executable, you can simply type:
 ```py
-`my_module.py`
+my_module.py
 ```
 to run this Python script (if you don't want to write the file extension, just save this file as `my_module`. It works in the very same way).
 
