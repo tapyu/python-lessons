@@ -96,7 +96,7 @@ Note that you cannot run `my_package` if you put this Python package within one 
 
 In the parent directory of `pypackage/`, tou can run
 ```sh
-pip install .
+pip install pypackage
 ```
 - To install this Python package locally, that is, from the source code in `pypackage/`.
 - `pip` uses the information from the `pyproject.toml` and `poetry.lock` files to install your project and its dependencies.
