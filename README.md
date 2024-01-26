@@ -62,19 +62,15 @@
     ```sh
     python pypackage/__main__.py
     ```
-1. Alternatively, you can navigate into the `pypackage/` directory and then run the script:
-    ```sh
-    cd pypackage
-    python __main__.py
-    ```
-1. If you want to run the project from the directory right above `pypackage/`, you can use the `-m` switch to run the the `__main__.py` module:
+1. Alternatively, you can use the `-m` switch to run the the `__main__.py` module:
     ```sh
     python -m pypackage.__main__
     ```
-1. You can also run the `pypackage` package as a module (that is, as a Python script file) by running
+1. You can also run the `pypackage` package as a module by running
     ```sh
     python -m my_package
     ```
+    Since `pypackage` is a package, `python` will implicitly run `pypackage/__main__.py`.
 
 ### Global run via the `PYTHONPATH` environment variable
 
