@@ -105,7 +105,7 @@ pypackage
 to execute the `my_package/__main__.py` file. Here is some infomation about this process:
 
 - `pip` uses the information from the `pyproject.toml` and `poetry.lock` files to install your project and its dependencies.
-- If the dependencies are not found on your local machine or if their version doesn't match the requirements listed in `pyproject.toml`, `pip` downloads installs the Python packages at the correct version from PyPI.
+- If the dependencies are not found on your local machine or if their version doesn't match the requirements listed in `pyproject.toml`, `pip` downloads and installs the versions of the required Python packages from PyPI.
 - In the `pyproject.toml` file, `pip` uses the information
     ```toml
     [tool.poetry.scripts]
