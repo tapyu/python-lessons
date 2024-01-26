@@ -111,7 +111,7 @@ to execute the `my_package/__main__.py` file. Here is some infomation about this
     [tool.poetry.scripts]
     correcao = "pypackage.__main__:main"
     ```
-    to generate a callable script, which is stored at `$HOME/.local/bin/correcao` (on GNU/Linux). This file is an executable Python script with the following content
+    to generate a callable script, which is stored at `$HOME/.local/bin/correcao` (on GNU/Linux systems). This file is an executable Python script with the following content
     ```py
     #!/usr/bin/python3
     # -*- coding: utf-8 -*-
