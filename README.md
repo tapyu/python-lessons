@@ -54,7 +54,7 @@
     if __name__ == "__main__":
       main()
     ```
-    `__name__` is a special variable in Python that is automatically set by the interpreter. When a Python package is executed as a module, the `__name__` variable is set to `"__main__"` since it is being run (and not imported). For example, when you run `python -m pypackage`, the `__name__` attribute is set to `"__main__"` as the main file that is run is `pypackage\__main__.py`. Hence, `if` statement is true and the `main()` function is run. A good practice is to make `main()`return the an `int` value, which is the exit code of your module. The zero value indicates success, while non-zero exit codes mean errors.
+    `__name__` is a special variable in Python that is automatically set by the interpreter. When a Python package is executed as a module, the `__name__` variable is set to `"__main__"` since it is being run (and not imported). For example, when you run `python -m pypackage`, the `__name__` attribute is set to `"__main__"` as the main file that is run is `pypackage/__main__.py`. Hence, `if` statement is true and the `main()` function is run. A good practice is to make `main()`return the an `int` value, which is the exit code of your module. The zero value indicates success, while non-zero exit codes mean errors.
 
 > NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__new__()` are called dunder files, variables, and methods, respectively. Dunder is an abbreviation for "Double UNDERscore".
 
