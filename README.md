@@ -127,8 +127,9 @@ to execute the the `main()` function of `my_package/__main__.py`. Here is some i
         sys.exit(main())
     ```
     Some comments can be made about it:
-      - This executable Python script runs the `main()` function from the `pypackage.__main__` module, where `pypackage` is the Python package that is now located at `$HOME/.local/lib/pythonX.XX/site-packages/`.
-      - The return `int` value of `main()` is passed to `syst.exit()`, which uses it as the exit code of the `correcao` command.
+
+    - This executable Python script runs the `main()` function from the `pypackage.__main__` module, where `pypackage` is the Python package that is now located at `$HOME/.local/lib/pythonX.XX/site-packages/`.
+    - The return `int` value of `main()` is passed to `syst.exit()`, which uses it as the exit code of the `correcao` command.
 - You can use `pipx` instead of `pip`.
 - To uninstall it, just run
     ```sh
