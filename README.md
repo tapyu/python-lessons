@@ -44,7 +44,7 @@
 - `__main__.py` allows you to define the entrypoint of your Python package when it is run as a module, that is, `python -m pypackage`. This command works only if:
     1. The file `pypackage/__main__.py` exists.
     2. You are in the parent directory of `pypackage` or if the path to `pypackage` is searchable by `python`.
--  It provides a way to structure your package for script execution, defining behaviors specific to running the package from the command line.
+-  It provides a way to structure your package for script execution, defining specific behaviors when running it from the command line.
 -  The `__main__.py` usually contains
     ```py
     if __name__ == "__main__":
