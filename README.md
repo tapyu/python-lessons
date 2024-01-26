@@ -92,15 +92,18 @@ python -m my_package
 ```
 and `python` will find `my_package` and run `my_package/__main__.py`.
 
-Note that you cannot run `my_package` if you put this Python package within one of the directories listed in `$PATH` as Python packages are directories, and directories cannot be executed. [To make a Python package executable, you need to install it](https://github.com/tapyu/python-lessons/blob/package-managers/README.md).
+### Running a Python package as an executable
 
-### Local installation of the Python project via a packager manager
-
-In the parent directory of `pypackage/`, tou can run
+Note that, until now, we are using the `python` interpreter to run the `my_package/__main__.py` module. In other words, we are running the `python` executable, which in turns looks for `my_package/__main__.py` and executes it. Alternatively, we can create our own executable file, named `my_package`, and run it without explicitly resorting to `python` (under the hood, we still use it, though). The process of converting a Python package into an executable is called "installing", and we usually install a Python package via a package manager, such as `pip`. For example, in the parent directory of `pypackage/`, you can run
 ```sh
 pip install pypackage
 ```
-- To install this Python package locally, that is, from the source code in `pypackage/`.
+to install the `pypackage` package. Now, from anywhere, we can run
+```sh
+pypackage
+```
+to execute the `my_package/__main__.py` file. Here is some infomation about this process:
+
 - `pip` uses the information from the `pyproject.toml` and `poetry.lock` files to install your project and its dependencies.
 - If the dependencies are not found on your local machine or if their version doesn't match the requirements listed in `pyproject.toml`, `pip` downloads installs the Python packages at the correct version from PyPI.
 - In the `pyproject.toml` file, `pip` uses the information
