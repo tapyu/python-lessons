@@ -106,7 +106,7 @@ to install the `pypackage` package. Now, from anywhere, we can run
 ```sh
 pypackage
 ```
-to execute the `my_package/__main__.py` file. Here is some infomation about this process:
+to execute the the `main()` function of `my_package/__main__.py`. Here is some infomation about this process:
 
 - `pip` uses the information from the `pyproject.toml` and `poetry.lock` files to install your project and its dependencies.
 - If the dependencies are not found on your local machine or if their version doesn't match the requirements listed in `pyproject.toml`, `pip` downloads and installs the versions of the required Python packages from PyPI.
