@@ -52,7 +52,7 @@
     ```
     `__name__` is a special variable in Python that is automatically set by the interpreter. When a Python package is executed as a module, the `__name__` variable is set to `"__main__"` since it is the main program which is being run.  This block checks if the package is being executed as the main program (and not imported). Therefore, when you run `python -m pypackage`, the `__name__` attribute is set to `"__main__"` as the main file run is `pypackage\__main__.py`.
 
-> NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__new__()` are called dunder files, variables, and methods, respectively.
+> NOTE: Files, variables, and methods such as `__main__.py`, `__name__`, and `__new__()` are called dunder files, variables, and methods, respectively. Dunder is an abbreviation of "Double UNDERscore".
 
 ## Running a Python package
 
