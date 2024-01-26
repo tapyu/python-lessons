@@ -98,7 +98,7 @@ and `python` will find `my_package` and run `my_package/__main__.py`.
 
 ### Running a Python package as an executable
 
-Note that, until now, we are using the `python` interpreter to run the `my_package/__main__.py` module. In other words, we are running the `python` executable, which in turns looks for `my_package/__main__.py` and executes it. Alternatively, we can create our own executable file, named `my_package`, and run it without explicitly resorting to `python` (under the hood, we still use it, though). The process of converting a Python package into an executable is called "installing", and we usually install a Python package via a package manager, such as `pip`. For example, in the parent directory of `pypackage/`, you can run
+Note that, until now, we are using the `python` interpreter to run the `my_package/__main__.py` module. In other words, we are running the `python` interpreter, which in turns looks for `my_package/__main__.py` and executes it. Alternatively, we can create our own executable file, named `my_package`, and run it without explicitly resorting to `python` (under the hood, we still use it, though). The process of converting a Python package into an executable is called "installing", and we usually install a Python package via a package manager, such as `pip`. For example, in the parent directory of `pypackage/`, you can run
 ```sh
 pip install pypackage
 ```
