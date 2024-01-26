@@ -130,6 +130,7 @@ to execute the the `main()` function of `my_package/__main__.py`. Here is some i
 
     - This executable Python script runs the `main()` function from the `pypackage.__main__` module, where `pypackage` is the Python package that is now located at `$HOME/.local/lib/pythonX.XX/site-packages/`.
     - The return `int` value of `main()` is passed to `syst.exit()`, which uses it as the exit code of the `correcao` command.
+    - In nutshell, "installing a Python package" is the same as creating this Python script and copying the Python package to `$HOME/.local/lib/pythonX.XX/site-packages/`.
 - You can use `pipx` instead of `pip`.
 - To uninstall it, just run
     ```sh
