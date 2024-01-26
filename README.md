@@ -90,7 +90,7 @@ Now, from any directory on your terminal, you can run
 ```sh
 python -m my_package
 ```
-and `python` will find `my_package` and run it.
+and `python` will find `my_package` and run `my_package/__main__.py`.
 
 Note that you cannot run `my_package` if you put this Python package within one of the directories listed in `$PATH` as Python packages are directories, and directories cannot be executed. [To make a Python package executable, you need to install it](https://github.com/tapyu/python-lessons/blob/package-managers/README.md).
 
