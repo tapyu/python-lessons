@@ -23,15 +23,21 @@
 ## The `__init__.py` file
 
 - Each Python package (directory) contains a special `__init__.py` file (which can be empty) to indicate that this directory should be treated as a package.
-- The `__init__.py` file in a Python package serves as the initialization code for the package, and it is executed when the package is imported, that is, `import pypackage`. The main purpose of this file is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. It servers as a the "package's API".
-- You can use `__init__.py` to import modules or symbols that should be available when the package is imported. This can help users easily access commonly used components of the package. For instance:
+- The `__init__.py` file in a Python package serves as the initialization code for the package, and it is executed when the package is imported, that is, `import pypackage`. For instance, on the Python REPL:
+  ```
+  >>> import pypackage
+  >>> pypackage
+  <module 'pypackage' from '/path/to/pypackage/__init__.py'>
+  ```
+  Although `requests` is a package (i.e., a directory), importing it actually imports `/path/to/pypackage/__init__.py`, which is a module (i.e., a `.py` file). Therefore, the main purpose of `__init__.py` is to set up the package and expose specific functionalities or symbols to the external world when the package is imported. In other words, it servers as a the "package's API".
+- In `__init__.py`, you can import other modules, functions, and variables that should be available once the package is imported. This can help users easily access commonly used components of the package. For instance:
     ```py
     # NOTE: in __init__.py
     from .module1 import some_function
     from .module2 import another_function
     ```
-    Now, when someone imports the package (`import pypackage`), they can directly access `some_function` and `another_function`.
-- As of Python 3.3 and later, it is not strictly necessary to include an `__init__.py` file in the root directory of your project to consider it a package. In modern Python, implicit namespace packages are supported, which means you can have a directory structure without the need for an `__init__.py` file at every level. However, if you're working with older versions of Python (before 3.3) or if you want to ensure compatibility with tools and practices that expect the presence of `__init__.py` files, you might still include it.
+    Now, when someone imports the package (`import pypackage`), they can directly access `some_function` and `another_function`, for example, `pypackage.some_function()`.
+- As of Python 3.3 and later, it is not strictly necessary to include an `__init__.py` file in the root directory of your project to consider it a package. In modern Python, implicit namespace packages are supported, which means you can have a directory structure without needing an `__init__.py` file in every level. However, if you're working with older versions of Python (before 3.3) or if you want to ensure compatibility with tools and practices that expect the presence of `__init__.py` files, you might still include it.
 
 ## The `__main__.py` file
 
