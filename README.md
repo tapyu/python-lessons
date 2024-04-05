@@ -21,7 +21,6 @@ The directory structure of this branch portrays a typical Python project:
 
 - [A Python package][1] is a directory structure containing Python codes which perform a specific set of functionalities.
 - Packages can contain sub-packages and modules (`.py` files), forming a nested structure.
-- We can understand a Python project as the Python package plus files related to [dependency managenment and versioning](https://github.com/tapyu/python-lessons/tree/packaging), in addition to other files
 
 ## The `__init__.py` file
 
