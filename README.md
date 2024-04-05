@@ -1,12 +1,8 @@
-# Python packages (AKA libraries)
+# Python project
 
-- [A Python package][1] is a directory structure containing Python codes which perform a specific set of functionalities.
-- Packages can contain sub-packages and modules (`.py` files), forming a nested structure.
-- In addition to sub-packages and modules, a Python package also contains files related to [dependency managenment and versioning](https://github.com/tapyu/python-lessons/tree/package-managers).
+A Python project consists in a Python package, files related to [dependency managenment and versioning control](https://github.com/tapyu/python-lessons/tree/packaging), and support files (`README.md`, `CONTRIBUTING.md`, `docs/`, `LICENSE`, etc...).
 
-## A typical Python package structure
-> NOTE: This Python project uses `poetry` for dependency management, but [other tools][2] can also be used for this purpose.
-
+The directory structure of this branch portrays a typical Python project:
 ```
 .
 ├── pypackage
@@ -19,6 +15,13 @@
 ├── pyproject.toml
 └── README.md
 ```
+> NOTE: This Python project uses `poetry` for dependency management, but [other tools][2] can also be used for this purpose.
+
+# Python packages (AKA libraries)
+
+- [A Python package][1] is a directory structure containing Python codes which perform a specific set of functionalities.
+- Packages can contain sub-packages and modules (`.py` files), forming a nested structure.
+- We can understand a Python project as the Python package plus files related to [dependency managenment and versioning](https://github.com/tapyu/python-lessons/tree/packaging), in addition to other files
 
 ## The `__init__.py` file
 
