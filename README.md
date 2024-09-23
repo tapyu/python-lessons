@@ -90,7 +90,8 @@ In order to run `my_package` globally (that is, from anywhere), you must set the
 
 - On Windows, you need to set a [user environment variables](https://stackoverflow.com/a/4855685/13998346):
 
-  ![](https://i.stack.imgur.com/ZGp36.png)
+  ![ZGp36](https://github.com/user-attachments/assets/33cef0ce-9eb5-4ae5-9b11-aa9f955799fe)
+
 
 Now, from any directory on your terminal, you can run
 ```sh
