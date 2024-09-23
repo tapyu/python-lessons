@@ -15,7 +15,7 @@ The directory structure of this branch portrays a typical Python project:
 ├── pyproject.toml
 └── README.md
 ```
-> NOTE: This Python project uses `poetry` for dependency management, but [other tools][2] can also be used for this purpose.
+> NOTE: This Python project example uses `poetry` for dependency management, but [other tools][2] can also be used for this purpose.
 
 # Python packages (AKA libraries)
 
